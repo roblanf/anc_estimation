@@ -13,8 +13,8 @@ tr_sim <- sim.bd.taxa.age(n = 50, numbsim = 1, lambda = 0.5, mu = 0.0, frac = 1,
 
 tr_sim$edge.length <- tr_sim$edge.length * (1 / max(branching.times(tr_sim)))
 
-plot(tr_sim, edge.width = 2)
-nodelabels(round(allnode.times(tr_sim)[ -1:-length(tr_sim$tip.label) ], 1))
+#plot(tr_sim, edge.width = 2)
+#nodelabels(round(allnode.times(tr_sim)[ -1:-length(tr_sim$tip.label) ], 1))
 
 #############################
 
@@ -22,19 +22,18 @@ nodelabels(round(allnode.times(tr_sim)[ -1:-length(tr_sim$tip.label) ], 1))
 # SIMULATE BINARY CHARACTER ALONG THE TREE
 #############################
 
-par(mfrow = c(2, 1))
 
 Q <- matrix(c(-0.5, 0.5, 0.5, -0.5), 2, 2)
 colnames(Q) <- c('A', 'B')
 rownames(Q) <- c('A', 'B')
 
 s1 <- sim.history(tr_sim, anc = 'B', Q = Q)
-plot(s1, edge.width = 2, show.tip.label = F)
-tiplabels(s1$states, cex = 1.5)
+#plot(s1, edge.width = 2, show.tip.label = F)
+#tiplabels(s1$states, cex = 1.5)
 
-nodelabels(get_node_states(s1), cex = 1.5)
+#nodelabels(get_node_states(s1), cex = 1.5)
 
-corrplot(Q, method = 'number')
+#corrplot(Q, method = 'number')
 
 
 #    Get the sum of the branch lengths, S
@@ -43,24 +42,12 @@ corrplot(Q, method = 'number')
 
 S <- sum(tr_sim$edge.length)
 
+
+
+# DIAGNOSTICS
 # If Q is symmetric, these two should be the same:
-expected_trans_AB <- S * Q[2, 1]
-expected_trans_BA <- S * Q[1, 2]
 
-observed_trans_AB <- sum((s1$node.states[, 1] == 'A') & (s1$node.states[, 2] == 'B'))
-observed_trans_BA <- sum((s1$node.states[, 1] == 'B') & (s1$node.states[, 2] == 'A'))
-
-
-print(paste("Expected A -> B transitions", expected_trans_AB))
-print(paste("Observed A -> B transitions", observed_trans_AB))
-
-print(paste("Expected B -> A transitions", expected_trans_BA))
-print(paste("Observed B -> A transitions", observed_trans_BA))
-
-print(paste("The EXPECTED total number of transitions is:", expected_trans_AB))
-print(paste("The OBSERVED total number of transitions is:", sum(s1$node.states[, 1] != s1$node.states[, 2])))
-
-
+print_diagnostics(s1, Q)
 
 # Tesing selecting a Q for a given number of transitions
 # Set a value for a symmetric Q to obtain an expected of 5 transitions (T):
@@ -71,6 +58,11 @@ q_5 <- get_Q(tr_sim, 5)
 
 s2 <- sim.history(tr_sim, Q = q_5, anc = 'B')
 
+
+
+print_diagnostics(s2, q_5)
+
+# Now test that the selection of Q works
 
 
 
