@@ -64,11 +64,10 @@ print(paste("The OBSERVED total number of transitions is:", sum(s1$node.states[,
 
 # Tesing selecting a Q for a given number of transitions
 # Set a value for a symmetric Q to obtain an expected of 5 transitions (T):
-T <- 5
-trans_prob <- T /S
-q_5 <- matrix( c(-trans_prob, trans_prob, trans_prob, -trans_prob), 2, 2)
-colnames(q_5) <- c('A', 'B')
-rownames(q_5) <- colnames(q_5)
+
+
+
+q_5 <- get_Q(tr_sim, 5)
 
 s2 <- sim.history(tr_sim, Q = q_5, anc = 'B')
 
