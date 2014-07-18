@@ -1,0 +1,52 @@
+#Test estimation of Q and T with the correct tree
+#===============================================
+
+#July 18 2014
+
+#To do
+#-----
+
+#- Simulate tree with root age of 1 and 50 tips.
+
+#- Simulate binary character with *Texp*.
+
+#- Obtain *Tobs* and *Q*.
+
+#- Estimate *Test* and *Q* on the simulated tree and the character values at the tips.
+
+#- Calculate |*Tobs* - *Test*|.
+
+
+#Simulate tree
+#=============
+
+#Load the necessary packages and custom functions:
+
+library(phangorn)
+library(phytools)
+library(corrplot)
+library(TreeSim)
+library(NELSI)
+source('functions.R')
+
+#IN many cases it is overestimating the number of tips
+T_num <- 4
+
+texp_tobs <- vector()
+for(i in 1:100){
+  tr_sim <- sim.bd.taxa.age(n = 100, numbsim = 1, lambda = 0.5, mu = 0.0, frac = 1, age = 1.00, mrca = FALSE)[[1]]
+
+  tr_sim$edge.length <- tr_sim$edge.length * (1 / max(branching.times(tr_sim)))
+  q_high <- get_Q(tr_sim, trans_num = T_num)
+  sim_high <- sim.history(tr_sim, anc = 'A', Q = q_high)
+  res_temp <- print_diagnostics(sim_high, q_high)
+
+  fit_temp <- rerootingMethod(tr_sim, sim_high$states, model = 'ER')
+
+  fit_states <- get_fitted_states(fit_temp, sim_high)
+
+  texp_tobs[i]  <- (fit_states - res_temp[[2]])
+  print(paste('sim', i, texp_tobs[i]))
+}
+
+hist(texp_tobs)

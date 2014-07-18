@@ -51,23 +51,3 @@ print_diagnostics <- function(tree_simulation, Q, plot_results = FALSE){
   res_list <- list(ppois(q = observed_transitions_total, lambda = expected_trans_AB, lower.tail = T), observed_transitions_total, Q)
   return(res_list)
 }
-
-
-# get fitted states from a rerootingMethod object
-
-get_fitted_states <- function(fit_states, sim_tree){
-
-  node_states <- cbind( rownames(fit_states$marginal.anc), sapply(1:nrow(fit_states$marginal.anc), function(x) c('A', 'B')[which.max(c(fit_states$marginal.anc[x, 1], fit_states$marginal.anc[x, 2]))]))
-
-  node_states_matrix <- sim_tree$edge
-  for(i in 1:nrow(node_states)){
-    node_states_matrix[node_states_matrix[, 1] == node_states[i, 1], 1] <- node_states[i, 2]
-    node_states_matrix[node_states_matrix[, 2] == node_states[i, 1], 2] <- node_states[i, 2]
-  }
-
-  node_states_matrix[!(node_states_matrix[, 2] %in% c('A', 'B')), 2] <- sim_tree$states
-
-  return(sum(node_states_matrix[, 1] != node_states_matrix[, 2]))
-  #node_states_matrix
-
-}
