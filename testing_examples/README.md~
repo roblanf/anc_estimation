@@ -2,6 +2,7 @@ Tesing phytools functions for ancestral character state estimation
 ==================================================================
 
 
+
 ```r
 library(phangorn)
 library(phytools)
@@ -21,12 +22,14 @@ SIMULATE BINARY CHARACTER ALONG THE TREE
 
 This is for a symmetric matrix with equal probability of changing from A to B
 
+
 ```r
 par(mfrow = c(1, 2))
 Q <- matrix(c(-0.5, 0.5, 0.5, -0.5), 2, 2)
 colnames(Q) <- c('A', 'B')
 rownames(Q) <- c('A', 'B')
 ```
+
 
 ```r
 s1 <- sim.history(tr_sim, anc = 'B', Q = Q)
@@ -39,14 +42,21 @@ for(i in 1:(s1$Nnode)){
 }
 
 nodelabels(node_vals, cex = 1.5)
+```
 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-31.png) 
+
+```r
 corrplot(Q, method = 'number')
 ```
+
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-32.png) 
 
 ESTIMATE ANCESTRAL STATES
 =============================================
 
 The estimated Q matrix should be very similar to that used for the simulations.
+
 
 ```r
 tip_vals <- s1$states
@@ -64,9 +74,15 @@ for(j in 1:(nrow(states_fit$marginal.anc))){
 plot(tr_sim, edge.width = 2, show.tip.label = F)
 tiplabels(tip_vals, cex = 1.5)
 nodelabels(states_probs, cex = 1.5)
+```
 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-41.png) 
+
+```r
 corrplot(Q_fit, method = 'number')
 ```
+
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-42.png) 
 
 NOTES
 ====
