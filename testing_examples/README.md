@@ -53,7 +53,7 @@ for(i in 1:100){
   #if((i %% 10) == 0) print(paste('Running simulation', i, 'of', 1000, 'P=', round(poisson_p_vals[i], 2)))
 }
 
-par(mfrow = c(2, 1))
+par(mfrow = c(1, 2))
 hist(poisson_p_vals, col = 'blue', main = 'Poisson P values for expected transitions = 20')
 hist(trans_obs, col = 'green')
 ```
@@ -85,7 +85,7 @@ for(i in 1:100){
   #if((i %% 10) == 0) print(paste('Running simulation', i, 'of', 1000, 'P=', round(poisson_p_vals[i], 2)))
 }
 
-par(mfrow = c(2, 1))
+par(mfrow = c(1, 2))
 hist(poisson_p_vals, col = 'blue', main = "Poisson P values for expected transitions = 10")
 hist(trans_obs, col = 'green')
 ```
@@ -116,7 +116,7 @@ for(i in 1:100){
   #if((i %% 10) == 0) print(paste('Running simulation', i, 'of', 1000, 'P=', round(poisson_p_vals[i], 2)))
 }
 
-par(mfrow = c(2, 1))
+par(mfrow = c(1, 2))
 hist(poisson_p_vals, col = 'blue', main = "Poisson P values for expected transitions = 5")
 hist(trans_obs, col = 'green')
 ```
