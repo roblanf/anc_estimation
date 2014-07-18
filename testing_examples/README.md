@@ -13,7 +13,7 @@ To do
 
 - Simulate character data along the tree with Q. The transitions from the simulations are the observed number of transitions (*Tobs*).
 
-- Obtain P value of Tobs given a poisson distribution with lambda = *Texp*.
+- Obtain P value of Tobs given a Poisson distribution with lambda = *Texp*.
 
 - Repeat the analyses 100 times for 3 values of *Texp*, 20, 10, and 5, and plot the histograms of *P*(just for visual inspection) and of *Tobs*.
 
@@ -53,19 +53,22 @@ for(i in 1:100){
   #if((i %% 10) == 0) print(paste('Running simulation', i, 'of', 1000, 'P=', round(poisson_p_vals[i], 2)))
 }
 
-par(mfrow = c(1, 2))
+par(mfrow = c(2, 1))
 hist(poisson_p_vals, col = 'blue', main = 'Poisson P values for expected transitions = 20')
 hist(trans_obs, col = 'green')
 ```
 
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
 
+The average observed number of substitutions appears to be  below the observed. The data do not appear to follow a Poisson distribution.
+
+
 *Texp* = 10 (medium)
 ====================
 
 
 ```r
-# Simulate data along trees and get distribution of Pvalues of possion distribution with a medium number of transitions
+# Simulate data along trees and get distribution of Pvalues of Poisson distribution with a medium number of transitions
 ####################################
 
 T_num <- 10
@@ -82,12 +85,14 @@ for(i in 1:100){
   #if((i %% 10) == 0) print(paste('Running simulation', i, 'of', 1000, 'P=', round(poisson_p_vals[i], 2)))
 }
 
-par(mfrow = c(1, 2))
+par(mfrow = c(2, 1))
 hist(poisson_p_vals, col = 'blue', main = "Poisson P values for expected transitions = 10")
 hist(trans_obs, col = 'green')
 ```
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+
+A large proportion of the data conform to the poisson process. The centre of mass of the observed transitions is closer to the expected than in the case of *Texp* = 10.
 
 *Texp* = 5 (low)
 ================
@@ -111,14 +116,14 @@ for(i in 1:100){
   #if((i %% 10) == 0) print(paste('Running simulation', i, 'of', 1000, 'P=', round(poisson_p_vals[i], 2)))
 }
 
-par(mfrow = c(1, 2))
+par(mfrow = c(2, 1))
 hist(poisson_p_vals, col = 'blue', main = "Poisson P values for expected transitions = 5")
 hist(trans_obs, col = 'green')
 ```
 
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
 
-
+The centre of mass of the observed transitions is at the expected, or very close. However, it is not clear whether most of the simulations conform to a Possion process.
 
 
 
