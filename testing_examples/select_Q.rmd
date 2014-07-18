@@ -21,8 +21,7 @@ To do
 
 Load the necessary packages and custom functions:
 
-
-```r
+```{r}
 library(phangorn)
 library(phytools)
 library(corrplot)
@@ -34,8 +33,7 @@ source('functions.R')
 *Texp* = 20 (high)
 ==================
 
-
-```r
+```{r}
 # Simulate data along trees and get distribution of Pvalues of possion distribution with a high number of transitions
 ####################################
 
@@ -58,13 +56,10 @@ hist(poisson_p_vals, col = 'blue', main = 'Poisson P values for expected transit
 hist(trans_obs, col = 'green')
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
-
 *Texp* = 10 (medium)
 ====================
 
-
-```r
+```{r}
 # Simulate data along trees and get distribution of Pvalues of possion distribution with a medium number of transitions
 ####################################
 
@@ -87,13 +82,10 @@ hist(poisson_p_vals, col = 'blue', main = "Poisson P values for expected transit
 hist(trans_obs, col = 'green')
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
-
 *Texp* = 5 (low)
 ================
 
-
-```r
+```{r}
 # Simulate data along trees and get distribution of Pvalues of possion distribution with a low number of transitions
 ####################################
 
@@ -115,8 +107,6 @@ par(mfrow = c(1, 2))
 hist(poisson_p_vals, col = 'blue', main = "Poisson P values for expected transitions = 5")
 hist(trans_obs, col = 'green')
 ```
-
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
 
 
 
