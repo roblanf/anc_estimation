@@ -1,17 +1,28 @@
 library(phangorn)
 library(phytools)
-library(geiger)
 library(corrplot)
+library(TreeSim)
+library(NELSI)
+source('functions.R')
 
-# SIMULATE CHRONOGRAM WITH AGE OF 1
 
-tr_sim <- sim.bdtree(b = 1, d = 0, stop = 'taxa', n = 20, extinct = F)
+# SIMULATE CHRONOGRAM WITH ROOT HEIGHT = 1
+####################################
 
-tr_sim$edge.length <- tr_sim$edge.length * (2 / max(branching.times(tr_sim)))
+tr_sim <- sim.bd.taxa.age(n = 50, numbsim = 1, lambda = 0.5, mu = 0.0, frac = 1, age = 1.00, mrca = FALSE)[[1]]
 
-par(mfrow = c(2, 2))
+tr_sim$edge.length <- tr_sim$edge.length * (1 / max(branching.times(tr_sim)))
+
+plot(tr_sim, edge.width = 2)
+nodelabels(round(allnode.times(tr_sim)[ -1:-length(tr_sim$tip.label) ], 1))
+
+#############################
+
 
 # SIMULATE BINARY CHARACTER ALONG THE TREE
+#############################
+
+par(mfrow = c(2, 1))
 
 Q <- matrix(c(-0.5, 0.5, 0.5, -0.5), 2, 2)
 colnames(Q) <- c('A', 'B')
@@ -21,15 +32,53 @@ s1 <- sim.history(tr_sim, anc = 'B', Q = Q)
 plot(s1, edge.width = 2, show.tip.label = F)
 tiplabels(s1$states, cex = 1.5)
 
-node_vals <- vector()
-for(i in 1:(s1$Nnode)){
-  node_vals[i] <- s1$node.states[((s1$edge[, 1]) == (i + length(s1$tip.label))[1]), 1][1]
-}
-
-nodelabels(node_vals, cex = 1.5)
+nodelabels(get_node_states(s1), cex = 1.5)
 
 corrplot(Q, method = 'number')
 
+
+#    Get the sum of the branch lengths, S
+#    The expected number of transitions is then just S*Q (right? I'm not completely sure).
+#    So, we can get the Q that we want by just choosing a number of transitions (e.g. 1, 2, 5, 10), T, and then Q is just: Q = T/S
+
+S <- sum(tr_sim$edge.length)
+
+# If Q is symmetric, these two should be the same:
+expected_trans_AB <- S * Q[2, 1]
+expected_trans_BA <- S * Q[1, 2]
+
+observed_trans_AB <- sum((s1$node.states[, 1] == 'A') & (s1$node.states[, 2] == 'B'))
+observed_trans_BA <- sum((s1$node.states[, 1] == 'B') & (s1$node.states[, 2] == 'A'))
+
+
+print(paste("Expected A -> B transitions", expected_trans_AB))
+print(paste("Observed A -> B transitions", observed_trans_AB))
+
+print(paste("Expected B -> A transitions", expected_trans_BA))
+print(paste("Observed B -> A transitions", observed_trans_BA))
+
+print(paste("The EXPECTED total number of transitions is:", expected_trans_AB))
+print(paste("The OBSERVED total number of transitions is:", sum(s1$node.states[, 1] != s1$node.states[, 2])))
+
+
+
+# Tesing selecting a Q for a given number of transitions
+# Set a value for a symmetric Q to obtain an expected of 5 transitions (T):
+T <- 5
+trans_prob <- T /S
+q_5 <- matrix( c(-trans_prob, trans_prob, trans_prob, -trans_prob), 2, 2)
+colnames(q_5) <- c('A', 'B')
+rownames(q_5) <- colnames(q_5)
+
+s2 <- sim.history(tr_sim, Q = q_5, anc = 'B')
+
+
+
+
+
+
+stop('wow')
+#################################
 
 # ESTIMATE ANCESTRAL STATES
 
