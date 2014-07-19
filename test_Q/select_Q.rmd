@@ -27,7 +27,7 @@ library(phytools)
 library(corrplot)
 library(TreeSim)
 library(NELSI)
-source('../functions.R')
+source('../R/functions.R')
 ```
 
 *Texp* = 20 (high)
