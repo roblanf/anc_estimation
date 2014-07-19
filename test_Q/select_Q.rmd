@@ -7,15 +7,15 @@ July 18 2014
 To do
 -----
 
-- Simulate trees under a Yule process with a root height of 1, and 50 tips.
+- ~~Simulate trees under a Yule process with a root height of 1, and 50 tips.~~
 
-- Obtain the Q matrix given a number of expected transitions (*Texp*). This is done using the *get_Q* function, which divides the number of transitions by the total tree length to calculate the rates along Q.
+- ~~Obtain the Q matrix given a number of expected transitions (*Texp*). This is done using the *get_Q* function, which divides the number of transitions by the total tree length to calculate the rates along Q.~~
 
-- Simulate character data along the tree with Q. The transitions from the simulations are the observed number of transitions (*Tobs*).
+- ~~Simulate character data along the tree with Q. The transitions from the simulations are the observed number of transitions (*Tobs*).~~
 
-- Obtain P value of Tobs given a Poisson distribution with lambda = *Texp*.
+- ~~Obtain P value of Tobs given a Poisson distribution with lambda = *Texp*.~~
 
-- Repeat the analyses 100 times for 3 values of *Texp*, 20, 10, and 5, and plot the histograms of *P*(just for visual inspection) and of *Tobs*.
+- ~~Repeat the analyses 100 times for 3 values of *Texp*, 20, 10, and 5, and plot the histograms of *P*(just for visual inspection) and of *Tobs*.~~
 
 
 
@@ -27,7 +27,7 @@ library(phytools)
 library(corrplot)
 library(TreeSim)
 library(NELSI)
-source('functions.R')
+source('../functions.R')
 ```
 
 *Texp* = 20 (high)
