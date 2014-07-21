@@ -12,7 +12,9 @@ Select settings for simulations:
 
 - [~~Check that T_expected (*Texp*) corresponds to T_observed (*Tobs*) in simulations, and compare with the estimated (*Test*) using the correct tree.~~](https://github.com/sebastianduchene/anc_estimation/tree/tesing_examples/test_Trans_estimates)
 
-- Set 3 transitions and 3 substitution rates, for a total of 9 (3*3) simulation settings. Use these to simulate sequence data along the trees. Each substitution rate value should produce different numbers of variable sites, ranging from low (~0.05), medium (~0.1), and high (~0.5). For a sequence length of 1000 nucleotides. For the simulations of the sequence data, append the character state to the taxon name.
+- Try tree reconstruction with 0, 10, 100, and 1000, with a rate of 0.1. 
+
+- Set 3 transitions rates and sequence lengths(?), for a total of 9 (3*3) simulation settings. Use these to simulate sequence data along the trees. Each substitution rate value should produce different numbers of variable sites, ranging from low (~0.05), medium (~0.1), and high (~0.5). For a sequence length of 1000 nucleotides. For the simulations of the sequence data, append the character state to the taxon name.
 
 - Make BEAST file with matching substitution, tree, and clock models. Set the calibration to the root age used to simulate the data.
 
