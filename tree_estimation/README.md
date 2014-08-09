@@ -10,10 +10,11 @@ To do:
   - number of transitions
   - sequence length
 
-- Make function to take the output of get_tree_Q and make an xml file for beast 2
+- ~~Make function to take the output of get_tree_Q and make an xml file for beast 2~~
 
 - Make function to run beast 2 and summarise the output:
   - HCC tree
+  - posterior of nodes
   - ESS of key parameters
   - age of the root
   - others?

@@ -1,0 +1,6 @@
+    <init estimate="false" id="RandomTree.t:test_1" initial="@Tree.t:test_1" spec="beast.evolution.tree.RandomTree" taxa="@test_1">
+        <populationModel id="ConstantPopulation0.t:test_1" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:test_1" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+
