@@ -1,4 +1,7 @@
-
+library(NELSI)
+library(TreeSim)
+library(phangorn)
+library(phytools)
 
 # Get node states for tree simulated with sim.history from package phytools
 get_node_states <- function(tree_states){
@@ -87,9 +90,10 @@ get_tree_Q <- function(tree_age = 1, taxa = 50, rate = 0.1, n_trans = 4, seq_len
   tr_sim <- sim.bd.taxa.age(n = taxa, numbsim = 1, lambda = 0.5, mu = 0.0, frac = 1, age = tree_age, mrca = FALSE)[[1]]
   tr_sim$edge.length <- tr_sim$edge.length * (tree_age / max(branching.times(tr_sim)))
 
+
   # Simulate phylogram
   phylo_sim <- tr_sim
-  phylo_sim$edge.length <- tr_sim$edge.length * rlnorm(length(tr_sim$edge.length), meanlog = log(0.1), sdlog = 0.3)
+  phylo_sim$edge.length <- tr_sim$edge.length * rlnorm(length(tr_sim$edge.length), meanlog = log(rate), sdlog = 0.1)
 
   # Simulate sequence data
   if(seq_length > 0){
@@ -272,4 +276,35 @@ make_beast_xml <- function(seq_data, f_name, min_root, max_root){
 }
 
 
+
+
+#####
+# Run beast
+
+run_beast <- function(xml_path = '', beast2_path = '', tree_ann_path = '', print_results = T){
+	  out_file_path <- gsub('^.+/', '', xml_path)
+	  log_file <- gsub('xml', 'log', out_file_path)
+	  trees_file <- gsub('xml', 'trees', out_file_path)
+	  system(paste(beast2_path, xml_path))
+	  system(paste(tree_ann_path, trees_file, 'out_temp.tree'))
+	  out_annotations <- read.annotated.nexus('out_temp.tree')$annotations
+	  post_probs <- unlist(sapply(1:length(out_annotations), function(x) out_annotations[[x]]$posterior))
+
+             n_sup_new <- post_probs
+	     n_sup_new[1] <- post_probs[length(post_probs)]
+	     n_sup_new[2:length(n_sup_new)] <- post_probs[1:(length(post_probs) - 1)]
+
+	  post_probs <- n_sup_new
+	  out_tree <- read.nexus('out_temp.tree')	  
+	  dist_true_tree <- dist.topo(sim_dat1$chronogram, out_tree)
+
+	  if(print_results){
+	     print(paste('The mean node support is: ', mean(post_probs)))
+	     print(paste('The distance to the true tree is: ', dist_true_tree))
+	     plot(out_tree, cex = 0.5)
+	     nodelabels(round(post_probs, 2))
+	  }
+
+	  return(list(est_tree = out_tree, node_support = post_probs, dist_t_tre = dist_true_tree))
+}
 
