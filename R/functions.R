@@ -63,7 +63,29 @@ print_diagnostics <- function(tree_simulation, Q, plot_results = FALSE){
 
 # get fitted states from a rerootingMethod object
 
-get_fitted_states <- function(fit_states, sim_tree){
+
+
+
+get_fitted_states <- function(fit_states, states, tree_est){
+
+  node_states <- cbind( rownames(fit_states$marginal.anc), get_node_states(fit_states))
+  node_states_matrix <- tree_est$edge
+  for(i in 1:nrow(node_states)){
+    node_states_matrix[node_states_matrix[, 1] == node_states[i, 1], 1] <- node_states[i, 2]
+    node_states_matrix[node_states_matrix[, 2] == node_states[i, 1], 2] <- node_states[i, 2]
+  }
+
+node_states_matrix[!(node_states_matrix[, 2] %in% c('A', 'B')), 2] <-   states[as.numeric(node_states_matrix[!(node_states_matrix[, 2] %in% c('A', 'B')), 2])]
+
+#  return(sum(node_states_matrix[, 1] != node_states_matrix[, 2]))
+   return(node_states_matrix)
+  #node_states_matrix
+
+}
+
+
+#################DEPRECATED ONLY USED FOR INTIAL SIMULATIONS
+DEPRECATED_get_fitted_states <- function(fit_states, sim_tree){
 
   node_states <- cbind( rownames(fit_states$marginal.anc), get_node_states(fit_states))
   node_states_matrix <- sim_tree$edge
@@ -79,6 +101,7 @@ node_states_matrix[!(node_states_matrix[, 2] %in% c('A', 'B')), 2] <-   sim_tree
   #node_states_matrix
 
 }
+#################DEPRECATED ONLY USED FOR INTIAL SIMULATIONS
 
 
 
@@ -281,7 +304,7 @@ make_beast_xml <- function(seq_data, f_name, min_root, max_root){
 #####
 # Run beast
 
-run_beast <- function(xml_path = '', beast2_path = '', tree_ann_path = '', print_results = T){
+run_beast <- function(sim_dat, xml_path = '', beast2_path = '', tree_ann_path = '', print_results = T){
 	  out_file_path <- gsub('^.+/', '', xml_path)
 	  log_file <- gsub('xml', 'log', out_file_path)
 	  trees_file <- gsub('xml', 'trees', out_file_path)
@@ -296,7 +319,7 @@ run_beast <- function(xml_path = '', beast2_path = '', tree_ann_path = '', print
 
 	  post_probs <- n_sup_new
 	  out_tree <- read.nexus('out_temp.tree')	  
-	  dist_true_tree <- dist.topo(sim_dat1$chronogram, out_tree)
+	  dist_true_tree <- dist.topo(sim_dat$chronogram, out_tree)
 
 	  if(print_results){
 	     print(paste('The mean node support is: ', mean(post_probs)))
