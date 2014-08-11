@@ -5,7 +5,7 @@ source('../R/functions.R')
 #0, 10, 20, 50, 100, 200, 500, 1000, 2000
 
 
-s_len = 200
+s_len = 2000
 for(i in 1:10){
 
 sim_dat1 <- get_tree_Q(tree_age = 1, taxa = 50, rate = 0.1, n_trans = 10, seq_length = s_len)

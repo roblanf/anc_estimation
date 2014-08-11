@@ -5,7 +5,7 @@ source('../R/functions.R')
 # Recod seq length, mean posterior, dist to true tree, expected trans, estimated trans
 
 # 0 data 
-s_len = 0
+s_len = 100
 trans = 4
 
 
