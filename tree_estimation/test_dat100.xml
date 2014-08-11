@@ -3,56 +3,56 @@
 <data 
 id="test_dat100" 
 name="alignment">
-<sequence id="seq_t8" taxon="t8" totalcount="4" value="caccgcgataacgtgtgttctgcgcaacgcgagaagcaaaggacgtcccgtacctgcccgcgacaagacttcgggagagctgtcaggagcagctcgatac"/>
-<sequence id="seq_t34" taxon="t34" totalcount="4" value="ccccgcgatagtatgagttatgcgcaacgcgagaagcaaaggatgtcccatccctgcccgcgataagactccgggagagctgtcaggagcaccgcgatac"/>
-<sequence id="seq_t48" taxon="t48" totalcount="4" value="caccgggatagcatgagttccgcgcaacggtagaagcaaaagaggtcccatccctgcccccgacaagaattcgggagagctgtcaggagcaccgcgatgc"/>
-<sequence id="seq_t41" taxon="t41" totalcount="4" value="caccacgatagcaggaataatgcgcagcgcgagaagcaaaggacgtctcatccctgcccgcgacaagacttcgggagagctgtcaggagcaccgcgatac"/>
-<sequence id="seq_t45" taxon="t45" totalcount="4" value="caacgcgatagcatgagttatgcgcgaggcgcggagtacaggacctcccatccctgccagcgacaagacctagggagagatgttaggagcaccgcgatac"/>
-<sequence id="seq_t43" taxon="t43" totalcount="4" value="caccgcgatagcatgagttatgcgcaatgctagaagcaaaggacgtcccacccctgcccgcgacaaaacttcgggagagctggcaggagcaccgcattac"/>
-<sequence id="seq_t11" taxon="t11" totalcount="4" value="caacgcgagagcatgagttatgcgcaaggcgtgaagcaaagtacgtcccatccctgcccccgacaagacctcgggagagctgtcaggagcaccgcgatac"/>
-<sequence id="seq_t9" taxon="t9" totalcount="4" value="caccgcgatggcatgggttgtgcgcaacgcgagaagcaaaggacgtcccatccctgcccgcgacatgacttcgggagagctgtcaggagcaacgcgatac"/>
-<sequence id="seq_t4" taxon="t4" totalcount="4" value="caacgcgatagcatgagttatgcgcaagcggtgaagcaaaggacgtcccatccctgcccgcgacaagaccgcgggagaaatgtcaggagcaccgcgatac"/>
-<sequence id="seq_t38" taxon="t38" totalcount="4" value="caccgcgatagcatgaattatgcgcaacgcgagaagcaaaggacgtcccatccctgcccgcgacaagacttcgggagagcagtcaggcgccccgcgatac"/>
-<sequence id="seq_t12" taxon="t12" totalcount="4" value="caccgcgatagtatgatgtatgcgcaacccgagaaggaaaggacgtcccatcccgggccgcgacaactctccaggagcgatgtctggagcaccgcgatcc"/>
-<sequence id="seq_t24" taxon="t24" totalcount="4" value="caccgcgatagcatgagctatgcgcaacgcgagaagcaaaggatgtcccatccctgcccgcgacaagacttcgtgagaggtgttaggagcaccgcgatac"/>
-<sequence id="seq_t44" taxon="t44" totalcount="4" value="caccgcgatagcatgagttatgcgcaacgcgagattcacaggatgtcccatccctgcccgcgacaaaccttcgggagaggtgtcaggaccaccgcgatac"/>
-<sequence id="seq_t29" taxon="t29" totalcount="4" value="caccccgatagcatgagttatgcgcaacccgagcagcaaagcacgtcccttctctacccgcgacaagacttggggctagctgtcaggagcaccggtatac"/>
-<sequence id="seq_t30" taxon="t30" totalcount="4" value="caccgcaatagcatgacttattcgcaacgcgagaagcaaaggacgtctcatccttgcccgggacaagtcttggggagagctgtcaggagcaccgcgatac"/>
-<sequence id="seq_t23" taxon="t23" totalcount="4" value="caccgcaatagcatgacttatgcgcaccgcgaaaagcaaaggacttccgatccttgcccgcgacaagtcttcgggagatctgtcagaagcaccgcgatac"/>
-<sequence id="seq_t2" taxon="t2" totalcount="4" value="caccgcgatagcatgagttatgcgcaacgcgagaagcaaaggacgtcccatccctgcccgcgacaggacttcgggagagctgtcaggagcaacgcgttac"/>
-<sequence id="seq_t18" taxon="t18" totalcount="4" value="caccgcgatagcatgagtgatgtgaaacccgagaagcaaaggacgtcccatccctacccgcgacaagatttcgggagatctgtcaggagccccgcgatac"/>
-<sequence id="seq_t35" taxon="t35" totalcount="4" value="caccgcgatagcatgagtaatgtgaaacccgagaagcaaaatccgtcccatcccttcccgcgacaagatttcgggagagctgtcaggagccccgcgatac"/>
-<sequence id="seq_t3" taxon="t3" totalcount="4" value="caccgcgataggatgcgtaatgtgaaacccgagaagcaaaggacgtcccattcctacccgcgacaagatttcgggagagctgtcaggagccccgcgataa"/>
-<sequence id="seq_t15" taxon="t15" totalcount="4" value="caccgcgatagtatgagttatgcgcaacccgagaaggaaaggacgtgccatccctgccctcgacaagacttcacgagcgaagtcttgagcaccgcgatac"/>
-<sequence id="seq_t28" taxon="t28" totalcount="4" value="taccgcgatagcatgagttatgcgcaacgcgagtagcaaaggacgtccaatccacgcccgcgacaatacttcgagagagctgtcaggagccccgcgatac"/>
-<sequence id="seq_t32" taxon="t32" totalcount="4" value="caccgcgatagtatgagttatgcgcaacgcgagaagcaaaggacgtccaatccccgcccgcgacaatacttcgggagagttgtcaggagccccgcgatac"/>
-<sequence id="seq_t31" taxon="t31" totalcount="4" value="caccgcgatagcatgagtcaagcgcaacgcgagaagcaaaggacgtcccacccctgcgcgcgacaagactgcgggagagctgtatggagcaccccgatat"/>
-<sequence id="seq_t7" taxon="t7" totalcount="4" value="caccgcgatagcatgagtcaagcgcaacgcgagaagcaacggacgtcccatccctgcgcgcgacaagactgcgggagacctgcaaggagcaccccgatac"/>
-<sequence id="seq_t36" taxon="t36" totalcount="4" value="caccgcgatagcatgagtaatgtgaaaccggggaagcaaaggccgtcccatccctacccgcgtcaagattttgggagagctgtcaggagccccgcgatac"/>
-<sequence id="seq_t21" taxon="t21" totalcount="4" value="caccgcgatagcatgagttatgtgaaacccgagaagctaaggacgtcccatccctacccgcgacaagattttgggagagctgtcaggtgccccgcgatat"/>
-<sequence id="seq_t25" taxon="t25" totalcount="4" value="caacgcgatagcatgagttctgcgcaaggcgtgaagcaaaggacgtcccatccctgcgagcgacaagacctcgggagagctgtcaggagcaccgcgatac"/>
-<sequence id="seq_t27" taxon="t27" totalcount="4" value="catggcgatagtatgagttatgcgcgacccgagtaggaaaggacgtcccatccctgccctcgtcaagacttcacgagcgatgtcttgagcaccgcgatac"/>
-<sequence id="seq_t26" taxon="t26" totalcount="4" value="catcgcgatagtatgagttatgcgcgacccgagtaggaaaggacgtaccatccctgccctcgacaagacttcacgagcgatgtcttgagcaccgcgatac"/>
-<sequence id="seq_t40" taxon="t40" totalcount="4" value="caccgcgatagtataagttatgcgcgatccgagaaagaaaggacatcccatccctgcccgcgacaagacttcacgagcgatgtcttgagcaccgcgatac"/>
-<sequence id="seq_t6" taxon="t6" totalcount="4" value="caccgcgatagtatgagttatgcgcgacccgagaaggaaaggacgtcccatccctgcccgcgacaagacttcacgagcgatgtcttgagcacctcgatac"/>
-<sequence id="seq_t39" taxon="t39" totalcount="4" value="caacgcgatagcatgatttctgcgcaaggggtgaagcaaaggacgtcccatccctgccagcgacaagacctcgggagagctgtcaggagcaccgcgatac"/>
-<sequence id="seq_t33" taxon="t33" totalcount="4" value="caacgcgatagcatgagttctgcgcaaggcgtgaagcaaaggacgtcccatccctgccagcgacaagacctcgggagagctgtcaggagcaccgcgatac"/>
-<sequence id="seq_t5" taxon="t5" totalcount="4" value="caccgcgatagaaggagttatgcgcaacgcgagaagcaaaggacgtcccatccctgcccgcgacaagacttcgggagagctgtcaggagcaacgcgatac"/>
-<sequence id="seq_t19" taxon="t19" totalcount="4" value="cacggcgatagcatgagttatgcgcaacgcaagaagcgaaggacatgccatccgtgaccgcgacaaaacttcgggagggttgtcaggaacaccgcgatac"/>
-<sequence id="seq_t17" taxon="t17" totalcount="4" value="caacgcgttagcatgagttatgcgcaacgcgagacgcaaaggacctcacacccctgcacgcgacaaaacttcgggagaactgtcagaagcaccgcgttac"/>
-<sequence id="seq_t46" taxon="t46" totalcount="4" value="caacgcgttagcatgagttatgcgcaacgcgagacgcaaaggacctcacacccctgcacgcgacaaaacttcgagagaactgtcagaagcaccgcgttac"/>
-<sequence id="seq_t50" taxon="t50" totalcount="4" value="catcgcgatagtgtgagttatgcgcgacccgagtaggaaaggacgtcccatcgctgccctcgacaagacttcacgagcgatgtcttgggcaccccgatac"/>
-<sequence id="seq_t37" taxon="t37" totalcount="4" value="catcgcgatagtgtgagttatgcgcgacccgagtaggaaaggacgtcccatcgctgccctcgacaagacttcacgagcgatgtcttgggcaccgcgagac"/>
-<sequence id="seq_t49" taxon="t49" totalcount="4" value="caccgcgatagaaggagttatgcgcaacgcgagaagcaaaggatgtcccatccctgcccgcgacaagacttcgggagagctgtcaggagcaacgcgatac"/>
-<sequence id="seq_t1" taxon="t1" totalcount="4" value="caccgcgatagaaggagttatgcgcaacgcgagaagcaaaggatgtcccatccctgcccgcgaccagacttcgggagagctttcaggagcaacgcgatac"/>
-<sequence id="seq_t16" taxon="t16" totalcount="4" value="caccgcgatagcatgagttatgcgcaacgcgagaagcaaaggacatcccatccctgcccgcgacaagacttcgggagagctgtcaggagcaacgcggtac"/>
-<sequence id="seq_t10" taxon="t10" totalcount="4" value="caccgcgatagcatgagttatgcgcaacgcgagaagcaaaggacatcccatccctgcccgcgacaagacttcgggagagctgtcaggagcaacgcggtac"/>
-<sequence id="seq_t13" taxon="t13" totalcount="4" value="caacgcgatagcatgagttccgcgcaaggcgtgaaacaaaggacgtcccatccctgcccacgacacgacctcgggagtgttgtcaggagcaccgcgatac"/>
-<sequence id="seq_t47" taxon="t47" totalcount="4" value="caacgcgatagcatgagttacgcgcaaggcgtgaaacaaaggacgtgccatccctgcccacgacaagacctcgggagtgctgtcaggagcaccgcgatac"/>
-<sequence id="seq_t22" taxon="t22" totalcount="4" value="cacggcgatagcatgagttatgcgcaacgcgagaagcgagggacatgccatccgtgactgcgacaaaacttcgggagggttgtcaggaacaccgcgatac"/>
-<sequence id="seq_t14" taxon="t14" totalcount="4" value="cacggcgatagcatgagttatgcgcaacgcgagaagcgaaggacatgccatccgtgaccgcgacaaaacttcgggagggttgtcaggaacaccgcgatac"/>
-<sequence id="seq_t20" taxon="t20" totalcount="4" value="caccgcgatagcatgagttatgggcaacccgagcagcaaaggacgtcccatcactagccgcgacaagacttggggagagctgtcaggagcaccgctatac"/>
-<sequence id="seq_t42" taxon="t42" totalcount="4" value="caccgcgatagcatgagttatgggcaacccgagcagcaaaggacgtcccatcactagccgcgacaagacttggggagagctgtcaggagcaccgctatac"/>
+<sequence id="seq_t37" taxon="t37" totalcount="4" value="taccccaacccctctaacgaccaagaaaaacattgtttgcccgcttagatttcaccgcgacttagccatctacaacaccgttgtgacgccacatgtgggt"/>
+<sequence id="seq_t4" taxon="t4" totalcount="4" value="taccccaacccggctaacgaccactgatgacatcgtttgcccgcgtagatttgaacgcgtcttggccatcaacaataccgtcgtcacgcaacattttgat"/>
+<sequence id="seq_t26" taxon="t26" totalcount="4" value="taccccaacccggctaacgaccaaaaaagacgttgtttgcccgcttagatttgaacgcgtcttggccatcaacaacaccgttgtcactcaacatgttgga"/>
+<sequence id="seq_t2" taxon="t2" totalcount="4" value="tagcccaatccggctgatgactgataacgacattgtttgcccgctgagatttaaacggttcttggcctccaactacaccgttgttacgcaacatcttggt"/>
+<sequence id="seq_t13" taxon="t13" totalcount="4" value="tcctccaacccggctaacgaccaataaagacattttctgtccgcttagatctaaacgcgtcttggccatcaacacaaccgtcgtcacgtaacatgttggt"/>
+<sequence id="seq_t24" taxon="t24" totalcount="4" value="taccccaacgcggctaacgaccaataaacacattgtttgtcggctcagatttgaactcttcgtggccatcaacaacaccgttgacacgcaacatgttggt"/>
+<sequence id="seq_t50" taxon="t50" totalcount="4" value="taccccaattcggctgacgactgataaagacactgtgtgcccgcttagatttgaacgcttcttggccaccattaacaccgttgtcacgtaacatgttggt"/>
+<sequence id="seq_t34" taxon="t34" totalcount="4" value="ttccccaacccggctaacgaccaatagagacattttttgcccgcttagatttgaacgcgtcttggccatcagcaacaccgtcgccacgcatcattttggt"/>
+<sequence id="seq_t46" taxon="t46" totalcount="4" value="taccccaacccggctaacggccaataaagacattgtttgcacgcttggatttgaacccgtcttggccatcatcaacaccgttgtcacgcaacatgtaggc"/>
+<sequence id="seq_t47" taxon="t47" totalcount="4" value="taccctaacccggctaacgaccaatcaagacattgtttgcccgcttagatttgaacgcgtcttggccatcatcaacaccgtagtcacgcaacatgttagt"/>
+<sequence id="seq_t21" taxon="t21" totalcount="4" value="taccccaatccggttgacgactgataaagacattggttgcccgcttagatttgaacgcttcttgtccaccaacaacaccgttgtgacgcaccatgttggt"/>
+<sequence id="seq_t5" taxon="t5" totalcount="4" value="taccccaacccggctaactaccaataaagacattgtttgcccgtttagatttgaacgcgtcttggccatcaacataaccgttgtcacgcaacatgttggt"/>
+<sequence id="seq_t6" taxon="t6" totalcount="4" value="taccccgacccggctaacgaccaataaagactttgtttgcccgcttagattcgaacgcgtcttggccatgaacacaaccgttgtcacccaacatgctggt"/>
+<sequence id="seq_t10" taxon="t10" totalcount="4" value="taccccaacccggcttacgaccaataaagagatcgttggcccgcttagatttgcgcgagtcgtggccatcaacaacaacgttgtcacgcaacatgttggt"/>
+<sequence id="seq_t28" taxon="t28" totalcount="4" value="taccccaacccggctaacgaccaataaatactttgtttgcccgcttagattcgaacgcgtcttggccatcaacacatccgttctcacgccacatgttcgt"/>
+<sequence id="seq_t3" taxon="t3" totalcount="4" value="tcccccaaggcggcttacgacctatagagacattttttgcccgcttagatttgaacgtgtcttggccatcaacaacaccgtcgtcaggcatcattttggt"/>
+<sequence id="seq_t22" taxon="t22" totalcount="4" value="taccccaatccggttgacgactgataaagacattgtttgcccgcttagatttgaatgcgtcttggccaccaacaacagcgttcacacgcaacatcttggt"/>
+<sequence id="seq_t39" taxon="t39" totalcount="4" value="taccccaacccggctaacgaccaataaagacatggtttgcccgcttagatttgaacgagtcttggccatcaccacaaccgttgtcacgcaacatgttggt"/>
+<sequence id="seq_t9" taxon="t9" totalcount="4" value="taccccatcccgggttacgaccaatgaaggcattctttgcctgcttagttttgcgcgcgtcgtggccatcaacaacaccgttgttacgcaacatgttggt"/>
+<sequence id="seq_t27" taxon="t27" totalcount="4" value="taccccagcccggcttacgaccaataaagacattgtttcccctcttagatttgcgcgcttcgtggccatcaacaacaccgttgtcacgcaacatgttggg"/>
+<sequence id="seq_t25" taxon="t25" totalcount="4" value="aaccccaacccggccaacgaccaataaagacattgtttgcccgcttagatttgaacgcgacatggccatcgacaaagccgttgtcacgcaacatgctggt"/>
+<sequence id="seq_t30" taxon="t30" totalcount="4" value="taccccaatccggctgacgactgattaagacattatttgcccgcttagatttgaacacttcttggccaccaacaacaccgttgtcacgcaaaatgtttgt"/>
+<sequence id="seq_t44" taxon="t44" totalcount="4" value="taccccgatccggctgacgactgataaagacattatttgcccgcttaggtttgaacacttcttggccaccaacaacaccgttgtcacgcaacatgttcgt"/>
+<sequence id="seq_t23" taxon="t23" totalcount="4" value="taccccaacgcggctaacgaccgataaagacattgtttgcccgcttagatttgaacgcgtcctggccatcaacaataccgttgtcacgcaacatgttggt"/>
+<sequence id="seq_t8" taxon="t8" totalcount="4" value="tactccaacgcggctaacgaccgataaagacattgtttgcccgcttaaatttgaacgcatcttggccatcaacaataccgtggtaacgcaacatgttggt"/>
+<sequence id="seq_t35" taxon="t35" totalcount="4" value="aaccccaacccggctaacgaccaataaagacaatgtttgcccgcttagatttgaacgcgtcttggccatcaccacaaccgttgtcacgcaacatgttggt"/>
+<sequence id="seq_t20" taxon="t20" totalcount="4" value="taccccaatccggctgacgacttataaagacattgtttgcccgcttagatttgaacgcttcttggccaccaacaacaccgttgacacgaaacaacttggt"/>
+<sequence id="seq_t17" taxon="t17" totalcount="4" value="taccccaatccggctgacgactgataaagacattgtttgcccgcttagatgtgaacgcttcttggccaccaacaacaccgtcgacacgcaacatcttggt"/>
+<sequence id="seq_t41" taxon="t41" totalcount="4" value="gaccccaacccggctaacgaccactagaggcatttttttcgcgcataactttgaacgcgtctttgccatcagcaacaccgatgtcacgcatcattttggt"/>
+<sequence id="seq_t36" taxon="t36" totalcount="4" value="taccccaatccggcgaacgaccaataaagaatttgtttgcccgcttagagtcgaacgcgtattggccatcaacacaagcgttcttacgcaacatgttggt"/>
+<sequence id="seq_t29" taxon="t29" totalcount="4" value="aaccccaacccggctaacgaccaataaagacattgtttgcccgcttagatttgaacgcgtcttggccatcaacaaaaccgttgtcacgcaacatgttggt"/>
+<sequence id="seq_t45" taxon="t45" totalcount="4" value="aaccccaacccggctaacgatcaataaagacattgtttgcccgcttagatttgaacgcgtcttgtccatcaacaaaaccgttgtcacgcaacatgttggt"/>
+<sequence id="seq_t38" taxon="t38" totalcount="4" value="taccccaaaccggctctcggccaataaagaaatagtttgcccgcttagatttcaacgcctcttggccattaacaagaccgttgtcacgcgacatattggt"/>
+<sequence id="seq_t43" taxon="t43" totalcount="4" value="taccccaacccggctctcggccaataacgaaatagtttgcccgcttagatttccacgcctcttggccattaacaagaccgttgtcaagcgacatattggt"/>
+<sequence id="seq_t49" taxon="t49" totalcount="4" value="taccccaacccggctatcgaccaataaagacaatgtttgcccgcttagatttgaacgcgtcttggccatcaccacaaccgttgtcacgcaacaggttggt"/>
+<sequence id="seq_t18" taxon="t18" totalcount="4" value="taccccaacccggctatcgaccattacagacaatgtttgcccgcttagatttgaacgcgtcttggccatcaccacaaccgttgtcacgcaacaggttggt"/>
+<sequence id="seq_t33" taxon="t33" totalcount="4" value="taccccaagccggctaacgaccagtagaggcattttttgcccgcttagatttgaacgcgtcttggccatcaacagcaccgttgtcaggcctcattttggt"/>
+<sequence id="seq_t12" taxon="t12" totalcount="4" value="taccccaagccggctaacgaccagtagaggcattttttgcccgcttagatttgaacgcgtcttggccatcaacagcaccgttgtcaggcctcattttggt"/>
+<sequence id="seq_t32" taxon="t32" totalcount="4" value="taccccaacccggctaacgaccaataaagactttgtttgcccgcttagattcgaacgcgtcttggccatcaacacaagcgatgtcacgcaacatgttgct"/>
+<sequence id="seq_t19" taxon="t19" totalcount="4" value="taccccaacccggctaacgaccaataaagactttgtttgcccgcttagattcgaacgcgtcttggccatcaacacaagcgatgtcacgcaacatgttgct"/>
+<sequence id="seq_t7" taxon="t7" totalcount="4" value="taccctaatccggctgacgactgataaagacaatgtttggccgcttagatttgaacgcttcttggccaccaacaacatcgttgacacgcaacatcttggt"/>
+<sequence id="seq_t40" taxon="t40" totalcount="4" value="taccctaatccggctgacgactgataaagacattgtttggccgcttagatttgaacgcttcttggccaccaacaacatcgttgacacgcaacatcttggt"/>
+<sequence id="seq_t1" taxon="t1" totalcount="4" value="taccccaacccggcttacgaccaataaagacattgtttcgcctcttagatttgcgcgcctcgtggccatcaacaacaccgttgtcacgcagcatgttggt"/>
+<sequence id="seq_t48" taxon="t48" totalcount="4" value="taccccaacccggcttacgaccaataaagacattgtttcgcctcttagatttgcgcgcctcgtggccatcaacaacaccgttgtcacgcagcatgttggt"/>
+<sequence id="seq_t15" taxon="t15" totalcount="4" value="gacaccaacccggctaacgaccaattgagacattttttgcgcgcttagctttgaacgcgtctttgccatcaacaacaccgttgtcacgcatcatattggt"/>
+<sequence id="seq_t14" taxon="t14" totalcount="4" value="gacaccaacccggctaaccaccaattgagacattttttgcgcgcttagctttgaacgcgtctttgccatcaacaacaccgttgtcacgcatcatattggt"/>
+<sequence id="seq_t11" taxon="t11" totalcount="4" value="taccccgacccggctaacgaccaatagagacattttttgcccgcttagctttgaacgtgtctttgccatcaacaacacccttgtcacgcatcattttggt"/>
+<sequence id="seq_t16" taxon="t16" totalcount="4" value="taccccgacccggctaacgaccaatagagacattttttgcccgcttagctttgaacgtgtctttgccatcaacaacacccttgtcacgcatcattttggt"/>
+<sequence id="seq_t42" taxon="t42" totalcount="4" value="tacccctatccggctggcgactgataaagacattgtttgcccgctaagagttgaacgcttcttggccaccaacaacctcgttgacacgcaacatcttggt"/>
+<sequence id="seq_t31" taxon="t31" totalcount="4" value="tacccctatccggctgacgactgataaagacattgtttgcccgctaagagttgaacgcttcttggccaccaacaacctcgttgacacgcaacatcttggt"/>
 </data>
 <map name="Beta">beast.math.distributions.Beta</map>
 <map name="Exponential">beast.math.distributions.Exponential</map>
@@ -106,56 +106,56 @@ name="alignment"/>
             <distribution id="root_age.prior" spec="beast.math.distributions.MRCAPrior" tree="@Tree.t:test_dat100">
 	    
 <taxonset id="root_age" spec="TaxonSet">
-<taxon id="t8" spec="Taxon"/>
-<taxon id="t34" spec="Taxon"/>
-<taxon id="t48" spec="Taxon"/>
-<taxon id="t41" spec="Taxon"/>
-<taxon id="t45" spec="Taxon"/>
-<taxon id="t43" spec="Taxon"/>
-<taxon id="t11" spec="Taxon"/>
-<taxon id="t9" spec="Taxon"/>
-<taxon id="t4" spec="Taxon"/>
-<taxon id="t38" spec="Taxon"/>
-<taxon id="t12" spec="Taxon"/>
-<taxon id="t24" spec="Taxon"/>
-<taxon id="t44" spec="Taxon"/>
-<taxon id="t29" spec="Taxon"/>
-<taxon id="t30" spec="Taxon"/>
-<taxon id="t23" spec="Taxon"/>
-<taxon id="t2" spec="Taxon"/>
-<taxon id="t18" spec="Taxon"/>
-<taxon id="t35" spec="Taxon"/>
-<taxon id="t3" spec="Taxon"/>
-<taxon id="t15" spec="Taxon"/>
-<taxon id="t28" spec="Taxon"/>
-<taxon id="t32" spec="Taxon"/>
-<taxon id="t31" spec="Taxon"/>
-<taxon id="t7" spec="Taxon"/>
-<taxon id="t36" spec="Taxon"/>
-<taxon id="t21" spec="Taxon"/>
-<taxon id="t25" spec="Taxon"/>
-<taxon id="t27" spec="Taxon"/>
-<taxon id="t26" spec="Taxon"/>
-<taxon id="t40" spec="Taxon"/>
-<taxon id="t6" spec="Taxon"/>
-<taxon id="t39" spec="Taxon"/>
-<taxon id="t33" spec="Taxon"/>
-<taxon id="t5" spec="Taxon"/>
-<taxon id="t19" spec="Taxon"/>
-<taxon id="t17" spec="Taxon"/>
-<taxon id="t46" spec="Taxon"/>
-<taxon id="t50" spec="Taxon"/>
 <taxon id="t37" spec="Taxon"/>
-<taxon id="t49" spec="Taxon"/>
-<taxon id="t1" spec="Taxon"/>
-<taxon id="t16" spec="Taxon"/>
-<taxon id="t10" spec="Taxon"/>
+<taxon id="t4" spec="Taxon"/>
+<taxon id="t26" spec="Taxon"/>
+<taxon id="t2" spec="Taxon"/>
 <taxon id="t13" spec="Taxon"/>
+<taxon id="t24" spec="Taxon"/>
+<taxon id="t50" spec="Taxon"/>
+<taxon id="t34" spec="Taxon"/>
+<taxon id="t46" spec="Taxon"/>
 <taxon id="t47" spec="Taxon"/>
+<taxon id="t21" spec="Taxon"/>
+<taxon id="t5" spec="Taxon"/>
+<taxon id="t6" spec="Taxon"/>
+<taxon id="t10" spec="Taxon"/>
+<taxon id="t28" spec="Taxon"/>
+<taxon id="t3" spec="Taxon"/>
 <taxon id="t22" spec="Taxon"/>
-<taxon id="t14" spec="Taxon"/>
+<taxon id="t39" spec="Taxon"/>
+<taxon id="t9" spec="Taxon"/>
+<taxon id="t27" spec="Taxon"/>
+<taxon id="t25" spec="Taxon"/>
+<taxon id="t30" spec="Taxon"/>
+<taxon id="t44" spec="Taxon"/>
+<taxon id="t23" spec="Taxon"/>
+<taxon id="t8" spec="Taxon"/>
+<taxon id="t35" spec="Taxon"/>
 <taxon id="t20" spec="Taxon"/>
+<taxon id="t17" spec="Taxon"/>
+<taxon id="t41" spec="Taxon"/>
+<taxon id="t36" spec="Taxon"/>
+<taxon id="t29" spec="Taxon"/>
+<taxon id="t45" spec="Taxon"/>
+<taxon id="t38" spec="Taxon"/>
+<taxon id="t43" spec="Taxon"/>
+<taxon id="t49" spec="Taxon"/>
+<taxon id="t18" spec="Taxon"/>
+<taxon id="t33" spec="Taxon"/>
+<taxon id="t12" spec="Taxon"/>
+<taxon id="t32" spec="Taxon"/>
+<taxon id="t19" spec="Taxon"/>
+<taxon id="t7" spec="Taxon"/>
+<taxon id="t40" spec="Taxon"/>
+<taxon id="t1" spec="Taxon"/>
+<taxon id="t48" spec="Taxon"/>
+<taxon id="t15" spec="Taxon"/>
+<taxon id="t14" spec="Taxon"/>
+<taxon id="t11" spec="Taxon"/>
+<taxon id="t16" spec="Taxon"/>
 <taxon id="t42" spec="Taxon"/>
+<taxon id="t31" spec="Taxon"/>
 </taxonset>
 <Uniform id="Uniform.02" lower="0.9" name="distr" upper="1.1"/>
             	    </distribution>

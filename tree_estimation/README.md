@@ -27,6 +27,4 @@ legend(x = 0.1, y = 40, legend = c(0, 10, 20, 50, 100, 200, 500, 1000, 2000), fi
 
 
 
-This has very few outliers. The relationship looks more linear than last time.
-
 
