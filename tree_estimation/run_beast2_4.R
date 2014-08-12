@@ -6,7 +6,7 @@ source('../R/functions.R')
 
 
 s_len = 0
-for(i in 1:10){
+for(i in 1:100){
 
 sim_dat1 <- get_tree_Q(tree_age = 1, taxa = 50, rate = 0.1, n_trans = 10, seq_length = s_len)
 #write.dna(sim_dat1$seq_data, file = 'sdat_temp_150.fasta', format = 'fasta', nbcol = -1, colsep = '')
@@ -21,7 +21,7 @@ cat(paste(s_len, mean(out_test1$node_support), out_test1$dist_t_tre, sep = ' '),
 }
 
 s_len = 10
-for(i in 1:10){
+for(i in 1:100){
 
 sim_dat1 <- get_tree_Q(tree_age = 1, taxa = 50, rate = 0.1, n_trans = 10, seq_length = s_len)
 #write.dna(sim_dat1$seq_data, file = 'sdat_temp_150.fasta', format = 'fasta', nbcol = -1, colsep = '')
@@ -36,7 +36,7 @@ cat(paste(s_len, mean(out_test1$node_support), out_test1$dist_t_tre, sep = ' '),
 }
 
 s_len = 20
-for(i in 1:10){
+for(i in 1:100){
 
 sim_dat1 <- get_tree_Q(tree_age = 1, taxa = 50, rate = 0.1, n_trans = 20, seq_length = s_len)
 #write.dna(sim_dat1$seq_data, file = 'sdat_temp_150.fasta', format = 'fasta', nbcol = -1, colsep = '')
@@ -51,7 +51,7 @@ cat(paste(s_len, mean(out_test1$node_support), out_test1$dist_t_tre, sep = ' '),
 }
 
 s_len = 50
-for(i in 1:10){
+for(i in 1:100){
 
 sim_dat1 <- get_tree_Q(tree_age = 1, taxa = 50, rate = 0.1, n_trans = 50, seq_length = s_len)
 #write.dna(sim_dat1$seq_data, file = 'sdat_temp_150.fasta', format = 'fasta', nbcol = -1, colsep = '')
