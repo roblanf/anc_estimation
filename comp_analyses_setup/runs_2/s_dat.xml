@@ -3,56 +3,56 @@
 <data 
 id="s_dat" 
 name="alignment">
-<sequence id="seq_t9" taxon="t9" totalcount="4" value="cctctatactcaaccttgcttgtcttgcggaggggcacacttaacgttcg"/>
-<sequence id="seq_t26" taxon="t26" totalcount="4" value="ccccaatgttcaggcttgcctgtcttgcgtaggggccgactcaacgttcc"/>
-<sequence id="seq_t50" taxon="t50" totalcount="4" value="cctctatgctcagccttggttgtcttgagtaggggcccacttaaccttcg"/>
-<sequence id="seq_t8" taxon="t8" totalcount="4" value="cctctatgctcagccttgcttttcttgcgtaactgccctcttaacgatcc"/>
-<sequence id="seq_t4" taxon="t4" totalcount="4" value="catctatgcttagccttgctagtcttgcataggggcccacttaacgttcg"/>
-<sequence id="seq_t33" taxon="t33" totalcount="4" value="ccgctatgctcggccttgcttgacttgcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t34" taxon="t34" totalcount="4" value="cctctctgctcggccttgcttgtcttgcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t3" taxon="t3" totalcount="4" value="cctctacgctcagccttgcttgtctagcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t25" taxon="t25" totalcount="4" value="cttctatgctcagccttgcttgttttgcctaggggcccacttaacgttcg"/>
-<sequence id="seq_t12" taxon="t12" totalcount="4" value="gctatattttcagccttgcttgtctttcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t1" taxon="t1" totalcount="4" value="gctgtatgtgcagccttgcttgtctttcgtaggggcccactgaacgttcg"/>
-<sequence id="seq_t15" taxon="t15" totalcount="4" value="cctctatgctcagccttgctcggcttgcgtagggccccacttagcgtttg"/>
-<sequence id="seq_t28" taxon="t28" totalcount="4" value="cctctatgcttagccttgcctgtcttgcgtaggggcccacttatcgttcg"/>
-<sequence id="seq_t38" taxon="t38" totalcount="4" value="cctctatgcttggccctgcctgtcttgcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t16" taxon="t16" totalcount="4" value="cctctatgctcagccatgctcggcttgagtagggccccacttagcgtttg"/>
-<sequence id="seq_t39" taxon="t39" totalcount="4" value="cctctatgctcagccttgcttggcttgcgtacggccccacttagcgtttg"/>
-<sequence id="seq_t36" taxon="t36" totalcount="4" value="cgtctatgctcagccttgctagtcttgcgtagggccccacttaacgttcg"/>
-<sequence id="seq_t18" taxon="t18" totalcount="4" value="cttctatgctcagccttgcgagtcttgcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t22" taxon="t22" totalcount="4" value="cgtctatgctcagccttgcgtgtcttgcgtaggggcccactgaactttcg"/>
-<sequence id="seq_t46" taxon="t46" totalcount="4" value="gctctatgctcagccttgcatgtcttgcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t47" taxon="t47" totalcount="4" value="cctcgatgctcagtcttgcttgtcttgcgtacgggcacaaataaggtttg"/>
-<sequence id="seq_t30" taxon="t30" totalcount="4" value="cctcgatgctcagtcttgcttgtcttgcgtacggtcacacttaacgtttg"/>
-<sequence id="seq_t42" taxon="t42" totalcount="4" value="cctctatcctcatcctagcttgtactgcgtcgggtcccatttactgttcg"/>
-<sequence id="seq_t35" taxon="t35" totalcount="4" value="catctatgcttagccttacctgtcttgcgtagaggcccacttaacgtccg"/>
-<sequence id="seq_t5" taxon="t5" totalcount="4" value="catctatgcttagccttacctgtcttgcgtaggggcccacttaacttccg"/>
-<sequence id="seq_t45" taxon="t45" totalcount="4" value="catatatgctcagccttgctggtcttgcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t40" taxon="t40" totalcount="4" value="cctctatgctaagccttgcctctcttgcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t41" taxon="t41" totalcount="4" value="gctctatgctcagtcttgcttgtcttgcgttggggcccacttaacgttcc"/>
-<sequence id="seq_t49" taxon="t49" totalcount="4" value="gctctatgctcagtcttgcttgtcttgcgatggggcccacttaacgttcg"/>
-<sequence id="seq_t21" taxon="t21" totalcount="4" value="gctctatgctcagtcttgcttctcttgcgttggggcccacttaacgtccg"/>
-<sequence id="seq_t11" taxon="t11" totalcount="4" value="cctctatgctaagccttgcttgtcttgcgtagggggccacttaacgttcg"/>
-<sequence id="seq_t24" taxon="t24" totalcount="4" value="cctctatgctaagccttgcttgtcttgcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t31" taxon="t31" totalcount="4" value="cgtatatgctcagccttgcttgtcttgcgtagtggcccacttaacgttcg"/>
-<sequence id="seq_t19" taxon="t19" totalcount="4" value="cgtatatgctcagccgtgcttgtcttgcgtaggggctcacgtaacggtcg"/>
-<sequence id="seq_t20" taxon="t20" totalcount="4" value="catctatgctcagccttgcttgtcttgcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t17" taxon="t17" totalcount="4" value="catctatgctcagccttgcttgacttgcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t27" taxon="t27" totalcount="4" value="gctctatgctcagccttgcttgtcttgcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t43" taxon="t43" totalcount="4" value="gctctaggctcagccttgcttgtcatgcgtaggggactacttaacgttcg"/>
-<sequence id="seq_t48" taxon="t48" totalcount="4" value="gctctatgctcagccttgcttgtcatgcgtaggtgcccacttaacgttcg"/>
-<sequence id="seq_t23" taxon="t23" totalcount="4" value="cctctatgctcagccttgctcgtcttgcgtagggtcgcacttaacgttag"/>
-<sequence id="seq_t29" taxon="t29" totalcount="4" value="gctctgtgctcagccttgcttgtcttgcgtaggggcccacttaacgttcg"/>
-<sequence id="seq_t32" taxon="t32" totalcount="4" value="gctctgtgctcagccttgcttgtcttgcgtaggggaccacttaacgttcg"/>
-<sequence id="seq_t7" taxon="t7" totalcount="4" value="cctctatgctcagccctgcttgtcttgcgtagggtccgacttaacgttcc"/>
-<sequence id="seq_t13" taxon="t13" totalcount="4" value="cctctatgctcagccctgcttgtcttgcgtagggtcccacttaacgttcc"/>
-<sequence id="seq_t44" taxon="t44" totalcount="4" value="cctctatcctcatcctagcttgtcctgcgtagggtcccagttactgttcg"/>
-<sequence id="seq_t2" taxon="t2" totalcount="4" value="cctctatcctcatcctagcttgtcctgcgtagggtcccagttactgttcg"/>
-<sequence id="seq_t6" taxon="t6" totalcount="4" value="cctctatgcgcagccttgcttgtcttgcgtagggtcgcacttaacgttag"/>
-<sequence id="seq_t14" taxon="t14" totalcount="4" value="cctctatgctcagccttgcttgtcttgcgtagggtcgcacttaacgttag"/>
-<sequence id="seq_t10" taxon="t10" totalcount="4" value="gctctatgctcagtcttgctagtcttccgttggggcccacttaacgttcg"/>
-<sequence id="seq_t37" taxon="t37" totalcount="4" value="gctctatgctcagtcttgctagtcttccgttggggcccacttaacgttcg"/>
+<sequence id="seq_t9" taxon="t9" totalcount="4" value="taagtcctagtcgtttacgcaccgtattactgtcgcaagcactttctaag"/>
+<sequence id="seq_t29" taxon="t29" totalcount="4" value="taagtcctagtcgtttacgcatcgtattaatgtcgagagctctttcaaag"/>
+<sequence id="seq_t45" taxon="t45" totalcount="4" value="taagtcccagtcttttaggcaccgtattactgtcgaaagctttttctaag"/>
+<sequence id="seq_t13" taxon="t13" totalcount="4" value="taagtcctagtcgtttacgctccgtgttcctgtcgaaagctctttttaag"/>
+<sequence id="seq_t26" taxon="t26" totalcount="4" value="tgagtcctagtcgtttacgccccgtattactttctaaagctcttcctaag"/>
+<sequence id="seq_t35" taxon="t35" totalcount="4" value="tgattcctagtcgtttacgcaccgtattactgtcgaaagctctacctaag"/>
+<sequence id="seq_t14" taxon="t14" totalcount="4" value="taagtcttagtcgtttacgcaccgtgttactgttgaaaactcgttctaag"/>
+<sequence id="seq_t28" taxon="t28" totalcount="4" value="caggtcctagtggtttacgcaccgtgttacagtcataagctgttccaaag"/>
+<sequence id="seq_t37" taxon="t37" totalcount="4" value="caagtcctagttgtttacgcaccgttttactgtcaatagctctatctaag"/>
+<sequence id="seq_t46" taxon="t46" totalcount="4" value="taagtgctagtcctttacgcaccgtacgactgtcgaaagctctttctaag"/>
+<sequence id="seq_t6" taxon="t6" totalcount="4" value="taagtcctagtcgtttacgcaccgtactactgtcgaaagctctttctcag"/>
+<sequence id="seq_t20" taxon="t20" totalcount="4" value="taaatcctagtcgtttacgtaccgtattactgtctaaagctctttgtaag"/>
+<sequence id="seq_t8" taxon="t8" totalcount="4" value="tacgtcctagtcgtgtacgcaccgtattactgtcgcaagccctctcaatg"/>
+<sequence id="seq_t49" taxon="t49" totalcount="4" value="tacgtcatagtcgtttacgcaccgtattcctgtcgaaagctctgtctaag"/>
+<sequence id="seq_t22" taxon="t22" totalcount="4" value="tacgtccaagtcaattacgcaccgtattactgtcgaaagctctttctaag"/>
+<sequence id="seq_t31" taxon="t31" totalcount="4" value="tacgccctagtcgtttacgcaccatattactgtcgaaagatctttctaag"/>
+<sequence id="seq_t34" taxon="t34" totalcount="4" value="tatgtcctattcatttacgcacggtattgctgtcgaaagctctttctaag"/>
+<sequence id="seq_t24" taxon="t24" totalcount="4" value="tatgtccaagtcatttacgcacggtattactgtcgaaagctctttctaag"/>
+<sequence id="seq_t18" taxon="t18" totalcount="4" value="taagtcctagtcgtttacgcaccgtactactgtcgaaagctctttcgtag"/>
+<sequence id="seq_t44" taxon="t44" totalcount="4" value="taagttttagtcgtttacgcaccgtgttactgtcgaaagctctttctaag"/>
+<sequence id="seq_t48" taxon="t48" totalcount="4" value="taagtcttagtcgtttacgcaccgtgttactgtcgaaagcgctttctaag"/>
+<sequence id="seq_t47" taxon="t47" totalcount="4" value="taagtcctagtcgtttacgcaccgtattaatggcgaaagctctttcgaag"/>
+<sequence id="seq_t25" taxon="t25" totalcount="4" value="taagtcgtagtcgtttacgcgccgtattactgtcgaaacctctttcaaag"/>
+<sequence id="seq_t7" taxon="t7" totalcount="4" value="taagtcgtagtcgtttaggcgcagtattactgtcgaaacctctttcaaag"/>
+<sequence id="seq_t10" taxon="t10" totalcount="4" value="taagtcctagtcgtttacgtaccgtattgctgtctaatgctctttgaaag"/>
+<sequence id="seq_t33" taxon="t33" totalcount="4" value="taagtactagtggtttacgtaccgtgttactgtctaaagctctttgtaag"/>
+<sequence id="seq_t39" taxon="t39" totalcount="4" value="taagtcctagtcgttttcgcaccgtactactgttgaaagctctttctaag"/>
+<sequence id="seq_t41" taxon="t41" totalcount="4" value="taagtcctagtcgttttcgcaccgtactactgtcgaaagctctttctaag"/>
+<sequence id="seq_t32" taxon="t32" totalcount="4" value="taagtccttgtcggttacgcaccgtattactgtcgaaagctctttctaag"/>
+<sequence id="seq_t1" taxon="t1" totalcount="4" value="taagtcctagtcgtttacgtaccgtatgactgtctaaagctctttgtaag"/>
+<sequence id="seq_t21" taxon="t21" totalcount="4" value="caagtcctagtcgtttacgtaccgtattactgtctaaagctctttgtaag"/>
+<sequence id="seq_t43" taxon="t43" totalcount="4" value="taagtcctagtcgtttacgtaccgtattactgtctaaagctctttttaac"/>
+<sequence id="seq_t5" taxon="t5" totalcount="4" value="taagtcctagtcgtttacgcaccgtactaatgtcgaaagctctttcaaag"/>
+<sequence id="seq_t30" taxon="t30" totalcount="4" value="taagtcctattcgtttacgcaccgtattactgtcgaaagctctttctaac"/>
+<sequence id="seq_t19" taxon="t19" totalcount="4" value="taagtcctattcgtttacgcaccgtattacggtcgaaagctttttctaag"/>
+<sequence id="seq_t2" taxon="t2" totalcount="4" value="taagtcctagtcgtttacgcaccgtattaatgtcgaaagctctttaaaag"/>
+<sequence id="seq_t4" taxon="t4" totalcount="4" value="taagtcctaatcgtttacgcaccgtattaatgtcgaaagctctttcaaag"/>
+<sequence id="seq_t36" taxon="t36" totalcount="4" value="taagtcctagtcgttttcgccccgtactactatcgaaagatctttctaag"/>
+<sequence id="seq_t12" taxon="t12" totalcount="4" value="taagtcctagtcgttttcgcaccgtactattatcgaaagatctttctaag"/>
+<sequence id="seq_t42" taxon="t42" totalcount="4" value="tacgtcctagtcgtttacgcaccgtattccggtcgaaagctctttctaag"/>
+<sequence id="seq_t3" taxon="t3" totalcount="4" value="taagtgctagtcgtttacgtgccgtattactgtctaaagctctttgtaag"/>
+<sequence id="seq_t11" taxon="t11" totalcount="4" value="taagtcctagtcgtttacgtaccgaattactgtctaaagctctctgtaag"/>
+<sequence id="seq_t15" taxon="t15" totalcount="4" value="tacgtcctagtcgtttacgcaccgtattcgggtcgaaagctctttctaag"/>
+<sequence id="seq_t38" taxon="t38" totalcount="4" value="tacgtcctagtcgtttacgcaccgtattccggtcgaaagctctttctaag"/>
+<sequence id="seq_t27" taxon="t27" totalcount="4" value="taagtcctagtcggttacgtagcgtattactgtctaaagctctttgtaag"/>
+<sequence id="seq_t50" taxon="t50" totalcount="4" value="taagtcctagtcgtttacgtagcgtattactgtctaaagctctttgtaag"/>
+<sequence id="seq_t17" taxon="t17" totalcount="4" value="taagtccttgtcggttacgcaccgtattactgtcgaaagctctttccaag"/>
+<sequence id="seq_t23" taxon="t23" totalcount="4" value="taagtccttgtcggttacgcaccgtattactgtcgaaagctctttccaag"/>
+<sequence id="seq_t40" taxon="t40" totalcount="4" value="acagtcctagtcgtttaagcaccgtattactgtggaaaggtttttcaaag"/>
+<sequence id="seq_t16" taxon="t16" totalcount="4" value="acagtcctagtcgtttaagcaccgtattactgtggaaagctttttcaaag"/>
 </data>
 <map name="Beta">beast.math.distributions.Beta</map>
 <map name="Exponential">beast.math.distributions.Exponential</map>
@@ -107,55 +107,55 @@ name="alignment"/>
 	    
 <taxonset id="root_age" spec="TaxonSet">
 <taxon id="t9" spec="Taxon"/>
-<taxon id="t26" spec="Taxon"/>
-<taxon id="t50" spec="Taxon"/>
-<taxon id="t8" spec="Taxon"/>
-<taxon id="t4" spec="Taxon"/>
-<taxon id="t33" spec="Taxon"/>
-<taxon id="t34" spec="Taxon"/>
-<taxon id="t3" spec="Taxon"/>
-<taxon id="t25" spec="Taxon"/>
-<taxon id="t12" spec="Taxon"/>
-<taxon id="t1" spec="Taxon"/>
-<taxon id="t15" spec="Taxon"/>
-<taxon id="t28" spec="Taxon"/>
-<taxon id="t38" spec="Taxon"/>
-<taxon id="t16" spec="Taxon"/>
-<taxon id="t39" spec="Taxon"/>
-<taxon id="t36" spec="Taxon"/>
-<taxon id="t18" spec="Taxon"/>
-<taxon id="t22" spec="Taxon"/>
-<taxon id="t46" spec="Taxon"/>
-<taxon id="t47" spec="Taxon"/>
-<taxon id="t30" spec="Taxon"/>
-<taxon id="t42" spec="Taxon"/>
-<taxon id="t35" spec="Taxon"/>
-<taxon id="t5" spec="Taxon"/>
-<taxon id="t45" spec="Taxon"/>
-<taxon id="t40" spec="Taxon"/>
-<taxon id="t41" spec="Taxon"/>
-<taxon id="t49" spec="Taxon"/>
-<taxon id="t21" spec="Taxon"/>
-<taxon id="t11" spec="Taxon"/>
-<taxon id="t24" spec="Taxon"/>
-<taxon id="t31" spec="Taxon"/>
-<taxon id="t19" spec="Taxon"/>
-<taxon id="t20" spec="Taxon"/>
-<taxon id="t17" spec="Taxon"/>
-<taxon id="t27" spec="Taxon"/>
-<taxon id="t43" spec="Taxon"/>
-<taxon id="t48" spec="Taxon"/>
-<taxon id="t23" spec="Taxon"/>
 <taxon id="t29" spec="Taxon"/>
-<taxon id="t32" spec="Taxon"/>
-<taxon id="t7" spec="Taxon"/>
+<taxon id="t45" spec="Taxon"/>
 <taxon id="t13" spec="Taxon"/>
-<taxon id="t44" spec="Taxon"/>
-<taxon id="t2" spec="Taxon"/>
-<taxon id="t6" spec="Taxon"/>
+<taxon id="t26" spec="Taxon"/>
+<taxon id="t35" spec="Taxon"/>
 <taxon id="t14" spec="Taxon"/>
-<taxon id="t10" spec="Taxon"/>
+<taxon id="t28" spec="Taxon"/>
 <taxon id="t37" spec="Taxon"/>
+<taxon id="t46" spec="Taxon"/>
+<taxon id="t6" spec="Taxon"/>
+<taxon id="t20" spec="Taxon"/>
+<taxon id="t8" spec="Taxon"/>
+<taxon id="t49" spec="Taxon"/>
+<taxon id="t22" spec="Taxon"/>
+<taxon id="t31" spec="Taxon"/>
+<taxon id="t34" spec="Taxon"/>
+<taxon id="t24" spec="Taxon"/>
+<taxon id="t18" spec="Taxon"/>
+<taxon id="t44" spec="Taxon"/>
+<taxon id="t48" spec="Taxon"/>
+<taxon id="t47" spec="Taxon"/>
+<taxon id="t25" spec="Taxon"/>
+<taxon id="t7" spec="Taxon"/>
+<taxon id="t10" spec="Taxon"/>
+<taxon id="t33" spec="Taxon"/>
+<taxon id="t39" spec="Taxon"/>
+<taxon id="t41" spec="Taxon"/>
+<taxon id="t32" spec="Taxon"/>
+<taxon id="t1" spec="Taxon"/>
+<taxon id="t21" spec="Taxon"/>
+<taxon id="t43" spec="Taxon"/>
+<taxon id="t5" spec="Taxon"/>
+<taxon id="t30" spec="Taxon"/>
+<taxon id="t19" spec="Taxon"/>
+<taxon id="t2" spec="Taxon"/>
+<taxon id="t4" spec="Taxon"/>
+<taxon id="t36" spec="Taxon"/>
+<taxon id="t12" spec="Taxon"/>
+<taxon id="t42" spec="Taxon"/>
+<taxon id="t3" spec="Taxon"/>
+<taxon id="t11" spec="Taxon"/>
+<taxon id="t15" spec="Taxon"/>
+<taxon id="t38" spec="Taxon"/>
+<taxon id="t27" spec="Taxon"/>
+<taxon id="t50" spec="Taxon"/>
+<taxon id="t17" spec="Taxon"/>
+<taxon id="t23" spec="Taxon"/>
+<taxon id="t40" spec="Taxon"/>
+<taxon id="t16" spec="Taxon"/>
 </taxonset>
 <Uniform id="Uniform.02" lower="0.9" name="distr" upper="1.1"/>
             	    </distribution>

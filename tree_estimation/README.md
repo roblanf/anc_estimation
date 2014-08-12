@@ -23,8 +23,14 @@ plot(seq_dat1$meanPost, seq_dat1$treedist, pch = 20, cex = 2, col = col_points[a
 legend(x = 0.1, y = 40, legend = c(0, 10, 20, 50, 100, 200, 500, 1000, 2000), fill  = col_points, title = 'Sequence length')
 ```
 
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png) 
 
+
+![Plot of chunk](figure/Rplot.png)
+
+Notes
+======
+
+- To run the tests use the run_beast2_X.R scripts
 
 
 
