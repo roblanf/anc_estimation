@@ -12,9 +12,11 @@ dat <- cbind(dat, (dat[, 5] - dat[, 4]) ) # / dat[, 5])
 
 Bin the number of simulated transitions as follows:
 
-High:  x>=10
-Median: 5<=x<10
-Low: x<5
+- High:  x>=10
+
+- Median: 5<=x<10
+
+- Low: x<5
 
 
 
