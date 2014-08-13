@@ -27,11 +27,11 @@ Select settings for simulations:
 
   - ~~Try tree reconstruction with 0, 10, 100, and 1000, with a rate of 0.1. Get mean posterior for each of these and dist.topo for the true and the estimated tree.~~
 
-- Set 3 transitions rates and sequence lengths, for a total of 9 (3*3) simulation settings. Use these to simulate sequence data along the trees. Note that for the simulation data, the taxon states are in the output of the function get_tree_Q.
+- [~~Set 3 transitions rates and sequence lengths, for a total of 9 (3*3) simulation settings. Use these to simulate sequence data along the trees. Note that for the simulation data, the taxon states are in the output of the function get_tree_Q.~~](https://github.com/sebastianduchene/anc_estimation/tree/tesing_examples/comp_analyses_setup)
 
 
- - Make function to run the BEAST file from R and obtain the HCC tree after the run.
+ - ~~Make function to run the BEAST file from R and obtain the HCC tree after the run.~~
 
-- Write function to get the MPS, *Tobs*, *Test* with the HCC tree, and number of variable sites.
+- ~~Write function to get the MPS, *Tobs*, *Test* with the HCC tree, and number of variable sites.~~
 
-- Run a total of 100 replicates per simulation setting.
+- ~~Run a total of 100 replicates per simulation setting.~~

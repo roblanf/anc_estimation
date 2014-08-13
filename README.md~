@@ -5,6 +5,13 @@ Seabastian Duchene
 
 Aug 11 2014
 
+Currently runnig:
+----------------
+
+Folder comp_analyses_setup is runnig some of the settings. They are recording the sequence length, mean node support, distance to the true tree, simulated number of transitions, and estimated number of transitions.
+These results can be compiled. They should be binned by simulated number of transitions. The different binnings can be plotted as: estimated transitions - simulated transitions vs. mean posterior support.
+
+
 Select settings for simulations:
 --------------------------------
 
