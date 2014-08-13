@@ -25,7 +25,7 @@ l_trans <- which(dat$sim_trans < 5)
 
 # Plot posterior vs est_trans - sim_trans
 
-par(mfrow = c(1, 3))
+#par(mfrow = c(3, 1))
 par(mar = c(5, 5, 5, 5))
 par(bg = 'grey85')
 #par(col = 'white')

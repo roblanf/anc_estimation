@@ -33,7 +33,7 @@ Plot mean posterior node support vs the bias.
 
 
 ```r
-par(mfrow = c(1, 3))
+#par(mfrow = c(1, 3))
 par(mar = c(5, 5, 5, 5))
 #par(bg = 'black')
 #par(col = 'white')
@@ -45,17 +45,25 @@ plot(dat$posterior[h_trans], dat$bias[h_trans], pch = 20, ylim = c(-20, 20), col
 lines(x = c(0, 1), y = c(0, 0), col = 'black', lwd = 2)
 legend(x = 0.6, y = 15, bty = 'n', legend = c('0', '50', '100', '250'), fill = cols_plots, title = 'Sequence length', cex = 2)
 text(x = 0.3, y = 20, labels = expression(bold('High number of transitions (T>=10)')), cex = 1.5)
+```
 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-31.png) 
+
+```r
 plot(dat$posterior[m_trans], dat$bias[m_trans], pch = 20, ylim = c(-20, 20), col = cols_plots[dat$slen[m_trans]], cex = 2, xlab = 'Mean posterior node support', ylab = '', cex.lab = 1.5)
 lines(x = c(0, 1), y = c(0, 0), col = 'black', lwd = 2 )
 text(x = 0.35, y = 20, labels = expression(bold('Medium number of transitions (5<=T<10)')), cex = 1.5)
+```
 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-32.png) 
+
+```r
 plot(dat$posterior[l_trans], dat$bias[l_trans], pch = 20, ylim = c(-20, 20), col = cols_plots[dat$slen[l_trans]], cex = 2, xlab = 'Mean posterior node support', ylab = '', cex.lab = 1.5)
 lines(x = c(0, 1), y = c(0, 0), col = 'black' , lwd = 2)
 text(x = 0.3, y = 20, labels = expression(bold('Low number of transitions (T<5)')), cex = 1.5)
 ```
 
-![plot of chunk unnamed-chunk-3](figure/grey_plot.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-33.png) 
 
 Future runs
 ==========

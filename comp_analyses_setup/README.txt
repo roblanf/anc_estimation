@@ -30,7 +30,7 @@ l_trans <- which(dat$sim_trans < 5)
 Plot mean posterior node support vs the bias.
 
 ```{r}
-par(mfrow = c(1, 3))
+#par(mfrow = c(1, 3))
 par(mar = c(5, 5, 5, 5))
 #par(bg = 'black')
 #par(col = 'white')
