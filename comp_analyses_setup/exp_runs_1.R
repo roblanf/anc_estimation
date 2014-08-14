@@ -35,7 +35,7 @@ cols_plots <- rainbow(7)
 
 plot(dat$posterior[h_trans], dat$bias[h_trans], pch = 20, ylim = c(-20, 20), col = cols_plots[dat$slen[h_trans]], cex = 2, xlab = 'Mean posterior node support', ylab = 'Simulated transitions - Estimated transitions', cex.lab = 1.5)
 lines(x = c(0, 1), y = c(0, 0), col = 'white', lwd = 2)
-legend(x = 0.6, y = 15, bty = 'n', legend = c('0', '10', '50', '100', '250', '500'), fill = cols_plots, title = 'Sequence length', cex = 1.5)
+legend(x = 0.6, y = 15, bty = 'n', legend = c('0', '10', '50', '100', '250', '500', '1000'), fill = cols_plots, title = 'Sequence length', cex = 1.5)
 text(x = 0.3, y = 20, labels = expression(bold('High number of transitions (T>=10)')), cex = 1.5)
 
 plot(dat$posterior[m_trans], dat$bias[m_trans], pch = 20, ylim = c(-20, 20), col = cols_plots[dat$slen[m_trans]], cex = 2, xlab = 'Mean posterior node support', ylab = '', cex.lab = 1.5)
