@@ -325,6 +325,8 @@ run_beast <- function(sim_dat, xml_path = '', beast2_path = '', tree_ann_path = 
 	  out_tree <- read.nexus('out_temp.tree')	  
 	  dist_true_tree <- dist.topo(sim_dat$chronogram, out_tree)
 
+	  post_trees <- read.nexus(trees_file)
+
 	  if(print_results){
 	     print(paste('The mean node support is: ', mean(post_probs)))
 	     print(paste('The distance to the true tree is: ', dist_true_tree))
@@ -332,6 +334,6 @@ run_beast <- function(sim_dat, xml_path = '', beast2_path = '', tree_ann_path = 
 	     nodelabels(round(post_probs, 2))
 	  }
 
-	  return(list(est_tree = out_tree, node_support = post_probs, dist_t_tre = dist_true_tree))
+	  return(list(est_tree = out_tree, node_support = post_probs, dist_t_tre = dist_true_tree, post_trees = post_trees))
 }
 

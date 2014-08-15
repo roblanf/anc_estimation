@@ -57,7 +57,7 @@ lines(x = c(0, 1), y = c(0, 0), col = 'white' , lwd = 2)
 text(x = 0.3, y = 20, labels = expression(bold('Low number of transitions (T<5)')), cex = 1.5)
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![plot of chunk unnamed-chunk-3](figure/Rplot.png) 
 
 Future runs
 ==========
