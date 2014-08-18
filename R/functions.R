@@ -9,7 +9,7 @@ get_node_states <- function(tree_states){
 if(is.phylo(tree_states)){
   node_vals <- vector()
   for(i in 1:(tree_states$Nnode)){
-    node_vals[i] <- tree_states$node.states[((tree_states$edge[, 1]) == (i + length(tree_states$tip.label))[1]), 1][1]
+   node_vals[i] <- tree_states$node.states[((tree_states$edge[, 1]) == (i + length(tree_states$tip.label))[1]), 1][1]
   }
 }else{
   node_vals <- sapply(1:nrow(tree_states$marginal.anc), function(x) c('A', 'B')[which.max(c(tree_states$marginal.anc[x, 1], tree_states$marginal.anc[x, 2]))])
