@@ -2,6 +2,15 @@ Preliminary results
 ==================
 
 
+**Update**
+
+Preliminary plot including the estimates for the tree in the posterior. In the figure below the facets correspond to the expected number of transitions (T). Note that the Y axis is the mean esimated - simulated number of transitions for the trees in the posterior. The bars are the standard error of the bias. 
+
+
+![plot of chunk unnamed-chunk-3](figure/facets.png) 
+
+
+
 
 
 **Folder test_runs contains the code to esimate the transitions for the posterior**

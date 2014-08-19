@@ -2,6 +2,10 @@ Preliminary results
 ==================
 
 
+
+
+**Folder test_runs contains the code to esimate the transitions for the posterior**
+
 Load data. Include a variable for the bias in the estimated number of transitions
 
 
