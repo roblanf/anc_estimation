@@ -58,7 +58,7 @@ Simulate 10 trees for each
 
 Aug 11 2014
 
-Currently runnig:
+~~Currently runnig:~~
 ----------------
 
 Folder comp_analyses_setup is runnig some of the settings. They are recording the sequence length, mean node support, distance to the true tree, simulated number of transitions, and estimated number of transitions.
