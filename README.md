@@ -3,6 +3,59 @@ Ancestral reconstruction bias
 
 Seabastian Duchene
 
+
+Aug 21 2014
+
+New simulations:
+--------------
+
+Inherent bias
+-------------
+
+	 - Estimated trans with true tree vs. simulated number of transitions (this is the inherent bias of the method. We expect that the 'saturation point' will depend on the number of taxa)
+
+	   - 1000 taxa
+	   - 100 taxa
+	   - 50 taxa
+
+	 - Estimated trans with 1000 nuc tree vs. simulated trans (This sholud be similar to the previous simulation, with a trend line that increases and slowly saturates)
+
+	   - 1000 taxa
+	   - 100 taxa
+	   - 50 taxa
+
+	 - Estimated trans with 100 nuc tree vs. simulated trans (I expect that this will be a flat line for a high number of transitions)
+
+	   - 1000 taxa
+	   - 100 taxa
+	   - 50 taxa
+
+
+Bias for different number of transitions (T), taxa (N), and sequence lengths (l) vs. bias
+-----------------------------------------------------------------------------------------
+
+Note that in this context we refer to bias as T estimated with the posterior - T estimated with the true tree
+
+	- T = 3, 10, 30
+	
+	- N = 50, 100, 500
+
+	- l = 0, 10, 20, 50, 100, 1000
+
+Note that we only need ~ 10 tres per sequence length and number of taxa, which results in 180 runs
+	
+
+
+
+
+
+
+
+
+Simulate 10 trees for each 
+
+
+
 Aug 11 2014
 
 Currently runnig:
