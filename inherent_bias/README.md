@@ -4,4 +4,4 @@ These simulations show the bias in the rerooting method to estimate the number o
 
 The number of simulated transitions ranges from 2 to 35. Note that in small trees it is difficult to simulate large numbers of transitions.
 
-# Inherent bias with the correct tree
+## Inherent bias with the correct tree
