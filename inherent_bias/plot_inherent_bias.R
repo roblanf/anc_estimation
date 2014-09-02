@@ -9,8 +9,7 @@ The number of simulated transitions ranges from 2 to 35. Note that in small tree
 
 ## Inherent bias with the correct tree
 
-
-```r
+```{r}
 library(ggplot2)
 
 sim_50 <- read.table('inherent_bias_ntax50.txt', head = T, as.is = T)
@@ -28,10 +27,6 @@ plot_A <- ggplot(sim_data, aes(y = est_trans, x = sim_trans, colour = n_taxa)) +
 
 #pdf('inherent_bias_plot.pdf', useDingbats = T)
 print(plot_A)
-```
-
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png) 
-
-```r
 #dev.off()
+
 ```
