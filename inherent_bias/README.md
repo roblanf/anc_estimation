@@ -24,7 +24,7 @@ n_taxa <- relevel(n_taxa, '50')
 
 sim_data <- cbind(rbind(sim_50, sim_100, sim_1000), n_taxa)
 
-plot_A <- ggplot(sim_data, aes(y = est_trans, x = sim_trans, colour = n_taxa)) + geom_point() + ylab('Estimated number of transitions') + xlab('Simulated number of transitions') +  scale_colour_discrete(name = 'Number of taxa') + ggtitle('Bias in the number of transitions \nwith the correct tree topology') + theme(plot.title = element_text(face = 'bold'))
+plot_A <- ggplot(sim_data, aes(y = est_trans, x = sim_trans, colour = n_taxa)) + geom_point() + ylab('Estimated number of transitions') + xlab('Simulated number of transitions') +  scale_colour_discrete(name = 'Number of taxa') + ggtitle('Bias in the number of transitions \nwith the correct tree topology') + theme(plot.title = element_text(face = 'bold')) + geom_abline(intercept = 0, slope = 1)
 
 #pdf('inherent_bias_plot.pdf', useDingbats = T)
 print(plot_A)
