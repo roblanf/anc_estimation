@@ -30,7 +30,6 @@ compiled_mat <- matrix(NA, 1, 7)
 colnames(compiled_mat) <- c('slen', 'ntax', 'exp_t', 'set_name', 'sim_t', 'min_t', 'max_t')
 
 for(i in folders){
-
       mat3 <- read.table(paste0(i, '/3res_matrix_20t.txt'), head = T)
       mat10 <- read.table(paste0(i, '/10res_matrix_20t.txt'), head = T)
       mat30 <- read.table(paste0(i, '/30res_matrix_20t.txt'), head = T)

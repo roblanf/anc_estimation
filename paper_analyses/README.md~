@@ -1,0 +1,7 @@
+# Ancestral state estimation bias
+
+## October 25 2014
+
+1 - Use generate data sets in simulation_data_sets to generate the data
+
+2 - run BEAST on the the folder for each set of simulations using the bash script run_beast.sh

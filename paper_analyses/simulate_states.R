@@ -19,13 +19,13 @@
 
 #   - Report set_name, simulated transitions, estimated n_trans on true tree, max and min n_trans on posterior trees
 
-source('../../functions.R')
+source('../../R/functions.R')
 require(phytools)
 require(NELSI)
 require(methods)
 true_trees <- grep('[.]tree ?$', dir(), value = T)
 
-
+#Specify here the number of transitions to simulate along the trees
 all_trans <- c(3, 10, 30)
 for(n_t in all_trans){
 n_trans <- n_t
