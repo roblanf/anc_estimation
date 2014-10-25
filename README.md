@@ -1,90 +1,83 @@
-Ancestral reconstruction bias
-==============================
+# Ancestral state estimation bias
 
-Seabastian Duchene
-
-
-Aug 21 2014
-
-New simulations:
---------------
-
-Inherent bias
--------------
-
-	 - Estimated trans with true tree vs. simulated number of transitions (this is the inherent bias of the method. We expect that the 'saturation point' will depend on the number of taxa)
-
-	   - 1000 taxa
-	   - 100 taxa
-	   - 50 taxa
-
-	 - Estimated trans with 1000 nuc tree vs. simulated trans (This sholud be similar to the previous simulation, with a trend line that increases and slowly saturates)
-
-	   - 1000 taxa
-	   - 100 taxa
-	   - 50 taxa
-
-	 - Estimated trans with 100 nuc tree vs. simulated trans (I expect that this will be a flat line for a high number of transitions)
-
-	   - 1000 taxa
-	   - 100 taxa
-	   - 50 taxa
+### October 25 2014
 
 
-Bias for different number of transitions (T), taxa (N), and sequence lengths (l) vs. bias
------------------------------------------------------------------------------------------
+## Instructions to reproduce the simulations and analyses (I suggest you clone this repo and follow the steps below):
 
-Note that in this context we refer to bias as T estimated with the posterior - T estimated with the true tree
+- Use generate data sets in simulation_data_sets: 
 
-	- T = 3, 10, 30
-	
-	- N = 50, 100, 500
+  - Open an R prompt, set the working directory to simulation_data_sets
 
-	- l = 0, 10, 20, 50, 100, 1000
+  - Inspect the file called settings data. This contains the simulation settings
 
-Note that we only need ~ 10 tres per sequence length and number of taxa, which results in 180 runs
-	
+  - In R type the code below. This will generate some folders with xml files for BEAST 2: 
 
+```
+source('generate_datasets.R')
+```
 
+  
+- run BEAST on the the folder for each set of simulations using the bash script run_beast.sh
 
+  - Open run_beast.sh and modify line 7 to as the path to the beast2 binary file in your machine
 
+  - In terminal, cd into each of the simulation settings files (set1, set2, set3, ect..), and execute run_beast.sh. This will run beast for all the xml files in the folder. You would use a command such as this:
 
-
-
-
-Simulate 10 trees for each 
-
-
-
-Aug 11 2014
-
-~~Currently runnig:~~
-----------------
-
-Folder comp_analyses_setup is runnig some of the settings. They are recording the sequence length, mean node support, distance to the true tree, simulated number of transitions, and estimated number of transitions.
-These results can be compiled. They should be binned by simulated number of transitions. The different binnings can be plotted as: estimated transitions - simulated transitions vs. mean posterior support.
+```
+./run_beast.sh
+```
 
 
-Select settings for simulations:
---------------------------------
+- Simulate ancestral states on the true tree and estimates for the trees in the posterior.
 
-- [~~Select *Q* based on a given number of transitions.~~](https://github.com/sebastianduchene/anc_estimation/tree/tesing_examples/test_Q)
+  - In each settings folder, run the script simulate_states.R, using **source('simulate_states.R')**. This script simulates a number of transitions along the true tree, and then estimates the transitions for the trees in the posterior. In the present example it uses the last 100 trees from the posterior, but a larger number should be used in practice. This can be changed in the script accordingly. In this example this will generate three files called: **10res_matrix_20t.txt, 30res_matrix_20t.txt, 3res_matrix_20t.txt**. The first column is the name of the replicate, the second is the true number of simulated transitions, the third and fourth are the maximum and minimum errors in the estimated number of transitions in the trees in the posterior. In this case we define error as: number of transitions in a tree in the posterior - number of simulated transitions.
 
-- [~~Check that T_expected (*Texp*) corresponds to T_observed (*Tobs*) in simulations, and compare with the estimated (*Test*) using the correct tree.~~](https://github.com/sebastianduchene/anc_estimation/tree/tesing_examples/test_Trans_estimates)
-
-- [~~Make BEAST file with matching substitution, tree, and clock models. Set the calibration to the root age used to simulate the data.~~](https://github.com/sebastianduchene/anc_estimation/tree/tesing_examples/tree_estimation)
-
-  - ~~Make function to run beast2, and tree annotator.~~
-
-  - ~~Make function to read annotated tree and get posterior probs of nodes.~~
-
-  - ~~Try tree reconstruction with 0, 10, 100, and 1000, with a rate of 0.1. Get mean posterior for each of these and dist.topo for the true and the estimated tree.~~
-
-- [~~Set 3 transitions rates and sequence lengths, for a total of 9 (3*3) simulation settings. Use these to simulate sequence data along the trees. Note that for the simulation data, the taxon states are in the output of the function get_tree_Q.~~](https://github.com/sebastianduchene/anc_estimation/tree/tesing_examples/comp_analyses_setup)
+- In the simulation_data_sets folder run the compile_data.R script using **source('compile_data.R') to obtain a single table with all the results. This will produce a text file called compiled_data.txt with the results for all data sets, which can be used for plotting the results as follows:
 
 
- - ~~Make function to run the BEAST file from R and obtain the HCC tree after the run.~~
+Estimated vs. simulated numbers of transitions for the true treee:
 
-- ~~Write function to get the MPS, *Tobs*, *Test* with the HCC tree, and number of variable sites.~~
 
-- ~~Run a total of 100 replicates per simulation setting.~~
+```r
+library(ggplot2)
+
+dat_raw <- read.table('compiled_data.txt', head = T, as.is = T)
+
+dat_raw$error_min <- (dat_raw$min_t - dat_raw$sim_t) / dat_raw$sim_t
+dat_raw$error_max <- (dat_raw$max_t - dat_raw$sim_t) / dat_raw$sim_t
+
+dat1.1 <- dat_raw
+dat1.1$ntax <- factor(dat1.1$ntax)
+dat1.1$slen <- factor(dat1.1$slen)
+
+plot1.1 <- ggplot(dat1.1, aes(x = jitter(sim_t), y = ((error_max - error_min) / 2) + error_min)) + geom_errorbar(aes(ymin = min_t , ymax = max_t), width = 0.5) + xlab('Simulated number of transitions') + ylab('Estimated number of transitions') + geom_abline(intercept = 0, slope = 1) + ylim(0, 75) + xlim(0, 30) + facet_wrap(~slen + ntax, ncol = 3) + ggtitle('Estimated vs. simulated number of transitions \n(Sequence length, number of taxa)')
+
+print(plot1.1)
+```
+
+
+![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png) 
+
+**Fig 1.** Estimated vs. simulated number of transitions for the true tree
+
+Estimation error:
+
+
+```r
+dat1.2 <- dat_raw
+dat1.2$ntax <- factor(dat1.2$ntax)
+dat1.2$slen[dat1.2$slen == 1000] <- dat1.2$slen[dat1.2$slen == 1000] - 800
+dat1.2$exp_t <- factor(dat1.2$exp_t)
+dat1.2$slen <- jitter(dat1.2$slen, amount = 7)
+
+plot1.2 <- ggplot(dat1.2, aes(x = slen, y =  ((error_max - error_min) / 2) + error_min)) + geom_errorbar(aes(ymin = error_min, ymax = error_max), width = 4) + xlim(0, 205) + facet_wrap(~exp_t + ntax, scales = 'free') + ylim(-2, 20) + ylab('Error in estimated number of transitions (Esitimated - simulated / simulated)') + xlab('Sequence length') + ggtitle('Errors in estimates vs. sequence length \n(Expected transitions, number of taxa)') + theme(axis.ticks = element_blank(), axis.text.x = element_blank())
+
+print(plot1.2)
+```
+
+
+
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+
+**Fig 2.** Error in estimated number of transitions vs. Sequence length for different expected number of transitions and numbers of taxa

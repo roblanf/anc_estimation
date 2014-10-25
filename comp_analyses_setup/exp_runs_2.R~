@@ -1,2 +1,0 @@
-dat <- read.table('test_runs_2.txt')
-dat <- cbind(dat, (dat[, 5] - dat[, 4]) ) # / dat[, 5])
