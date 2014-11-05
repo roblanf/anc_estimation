@@ -43,8 +43,13 @@ library(ggplot2)
 
 dat_raw <- read.table('compiled_data.txt', head = T, as.is = T)
 
-dat_raw$error_min <- (dat_raw$min_t - dat_raw$sim_t) / dat_raw$sim_t
-dat_raw$error_max <- (dat_raw$max_t - dat_raw$sim_t) / dat_raw$sim_t
+#dat_raw$error_min <- (dat_raw$min_t - dat_raw$sim_t) / dat_raw$sim_t
+#dat_raw$error_max <- (dat_raw$max_t - dat_raw$sim_t) / dat_raw$sim_t
+
+dat_raw$error_min <- dat_raw$min_t / dat_raw$sim_t
+dat_raw$error_max <- dat_raw$max_t / dat_raw$sim_t
+
+
 
 dat1.1 <- dat_raw
 dat1.1$ntax <- factor(dat1.1$ntax)
