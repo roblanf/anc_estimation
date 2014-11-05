@@ -56,9 +56,19 @@ dat1.1 <- dat_raw
 dat1.1$ntax <- factor(dat1.1$ntax)
 dat1.1$slen <- factor(dat1.1$slen)
 
-plot1.1 <- ggplot(dat1.1, aes(x = jitter(sim_t), y = ((error_max - error_min) / 2) + error_min)) + geom_errorbar(aes(ymin = min_t , ymax = max_t), width = 0.5) + xlab('Simulated number of transitions') + ylab('Estimated number of transitions') + geom_abline(intercept = 0, slope = 1) + ylim(0, 75) + xlim(0, 30) + facet_wrap(~slen + ntax, ncol = 3) + ggtitle('Estimated vs. simulated number of transitions \n(Sequence length, number of taxa)') + theme_bw()
+plot1.1 <- ggplot(dat1.1, aes(x = jitter(sim_t), y = ((error_max - error_min) / 2) + error_min)) + geom_errorbar(aes(ymin = error_min , ymax = error_max), width = 0.5) + xlab('Simulated number of transitions') + ylab('Estimated number of transitions') + geom_abline(intercept = 1, slope = 0)  + xlim(0, 30) + facet_wrap(~slen + ntax, ncol = 3) + ggtitle('Estimated vs. simulated number of transitions \n(Sequence length, number of taxa)') + theme_bw() + ylim(0, 5)
 
 print(plot1.1)
+```
+
+```
+## Warning: Removed 8 rows containing missing values (geom_path).
+## Warning: Removed 20 rows containing missing values (geom_path).
+## Warning: Removed 16 rows containing missing values (geom_path).
+## Warning: Removed 12 rows containing missing values (geom_path).
+## Warning: Removed 4 rows containing missing values (geom_path).
+## Warning: Removed 4 rows containing missing values (geom_path).
+## Warning: Removed 4 rows containing missing values (geom_path).
 ```
 
 ![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png) 
@@ -76,6 +86,18 @@ dat1.2$slen <- jitter(dat1.2$slen, amount = 7)
 plot1.2 <- ggplot(dat1.2, aes(x = slen, y =  ((error_max - error_min) / 2) + error_min)) + geom_errorbar(aes(ymin = error_min, ymax = error_max), width = 4) + xlim(0, 205) + facet_wrap(~exp_t + ntax, scales = 'free') + ylim(-2, 20) + ylab('Error in estimated number of transitions (Esitimated - simulated / simulated)') + xlab('Sequence length') + ggtitle('Errors in estimates vs. sequence length \n(Expected transitions, number of taxa)') + theme(axis.ticks = element_blank(), axis.text.x = element_blank()) + theme_bw()
 
 print(plot1.2)
+```
+
+```
+## Warning: Removed 2 rows containing missing values (geom_path).
+## Warning: Removed 5 rows containing missing values (geom_path).
+## Warning: Removed 2 rows containing missing values (geom_path).
+## Warning: Removed 5 rows containing missing values (geom_path).
+## Warning: Removed 2 rows containing missing values (geom_path).
+## Warning: Removed 4 rows containing missing values (geom_path).
+## Warning: Removed 2 rows containing missing values (geom_path).
+## Warning: Removed 2 rows containing missing values (geom_path).
+## Warning: Removed 6 rows containing missing values (geom_path).
 ```
 
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
