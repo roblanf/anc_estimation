@@ -28,7 +28,7 @@ plot1.1 <- ggplot(dat1.1, aes(x = jitter(exp_t), y = sim_t)) + geom_point() + fa
 
 dat1.2 <- dat_raw
 dat1.2$ntax <- factor(dat1.2$ntax)
-dat1.2$slen[dat1.2$slen == 1000] <- dat1.2$slen[dat1.2$slen == 1000] - 800
+#dat1.2$slen[dat1.2$slen == 1000] <- dat1.2$slen[dat1.2$slen == 1000] - 800
 dat1.2$exp_t <- factor(dat1.2$exp_t)
 dat1.2$slen <- jitter(dat1.2$slen, amount = 2)
 dat1.2$mean_post <- jitter(dat1.2$mean_post, amount = 0.02)
@@ -36,9 +36,9 @@ dat1.2$mean_post <- jitter(dat1.2$mean_post, amount = 0.02)
 
 #plot1.2 <- ggplot(dat1.2, aes(x = slen, y =  ((error_max - error_min) / 2) + error_min)) + geom_errorbar(aes(ymin = error_min, ymax = error_max), width = 4) + xlim(0, 205) + facet_wrap(~exp_t + ntax, scales = 'free') + ylim(-2, 10) + ylab('Error in estimated number of transitions (Esitimated / simulated)') + xlab('Sequence length') + ggtitle('Errors in estimates vs. sequence length \n(Expected transitions, number of taxa)') + theme(axis.ticks = element_blank(), axis.text.x = element_blank()) + theme_bw() + geom_abline(intercept = 1, slope = 0)
 
-plot1.2 <- ggplot(dat1.2, aes(x = slen, y = ((error_max - error_min) / 2) + error_min)) + geom_errorbar(aes(ymin = error_min, ymax = error_max, width = 0.03)) + facet_wrap(~ntax + exp_t, scales = 'free')+ xlab('') + theme(axis.ticks = element_blank(), axis.text.x = element_blank()) + theme_bw() + geom_abline(intercept = 1, slope = 0, col = 'grey') + ylab ('') + ylim(0, 17)  + geom_point(size = 2)#+ xlim(0, 205) 
+plot1.2 <- ggplot(dat1.2, aes(x = mean_post, y = ((error_max - error_min) / 2) + error_min)) + geom_errorbar(aes(ymin = error_min, ymax = error_max, width = 0.03)) + facet_wrap(~ntax + exp_t, scales = 'free')+ xlab('') + theme(axis.ticks = element_blank(), axis.text.x = element_blank()) + theme_bw() + geom_abline(intercept = 1, slope = 0, col = 'grey') + ylab ('') + ylim(0, 21)  + geom_point(size = 2)+ xlim(0, 1) 
 
 
-pdf(file = 'Fig1_slen_rescale.pdf', useDingbats = F, width = 12, height = )
+pdf(file = 'Fig1_post_500tax.pdf', useDingbats = F, width = 12, height = )
 print(plot1.2)
 dev.off()
