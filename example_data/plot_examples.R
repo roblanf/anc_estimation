@@ -1,19 +1,20 @@
 source('../R/functions.R')
 
 # Put true tree here
-tr_true <- chronopl(read.tree('set17_10.tree '), lambda = 0.5)
+#tr_true <- chronopl(read.tree('set16_8.tree '), lambda = 0.5)
+tr_true <- chronopl(rtree(50), lambda = 0.5)
 
 tr_true$edge.length <- tr_true$edge.length / max(branching.times(tr_true))
 
 
 
 dif = 1
-while(dif < 5){
+while(dif != 2){
 
 tr_q <- get_Q(tr_true, 2)
 
 n_trans <- 0
-while( n_trans < 5){
+while( n_trans < 2){
   tr_s <- sim.history(tr_true, tr_q)
   n_trans <- length(unique(get_node_states(tr_s)))
 }
@@ -28,9 +29,14 @@ while( n_trans < 5){
 #}
 #class(est_chrono) <- 'multiPhylo'
 
-est_chrono <- read.annotated.nexus('set17_10.trees.annotated')	
+
+est_chrono <- read.annotated.nexus('set16_8.trees.annotated')	
 est_unl <- round(unlist(sapply(1:length(est_chrono$annotations), function(x) est_chrono$annotations[[x]]$posterior)), 2)
 est_post <- c(est_unl[length(est_unl)], est_unl[2:(length(est_unl) - 1)], est_unl[length(est_unl)])
+
+est_chrono <- chronopl(rSPR(tr_true), lambda = 0.5)
+est_chrono$edge.length <- est_chrono$edge.length / max(branching.times(est_chrono))
+
 
 #plot(est_chrono)
 #nodelabels(est_post)
@@ -52,7 +58,7 @@ n_states_true <- sum(sapply(1:nrow(fit_states_true), function(x) fit_states_true
 
 
 
-pdf('set17_10.pdf')
+#pdf('set16_8.pdf')
 par(mfrow = c(1, 2))
 plot(tr_true, show.tip.label = F)
 tiplabels(tips_true, cex = 0.5, frame = 'circle', bg = factor(tips_true, ordered = T), col = 'white')
@@ -69,9 +75,9 @@ plot(est_chrono, show.tip.label = F)
 tiplabels(tip_states, cex = 0.5, frame = 'circle', bg = factor(tip_states, ordered = T), col = 'white')
 nodelabels(fit_nodes, cex = 0.5, frame = 'circle', bg = factor(fit_nodes, ordered = T), col = 'white')
 nodelabels(est_post, adj = c(1.2, -1), frame = 'none', cex = 0.5)
-dev.off()
+#dev.off()
 
-write.table(est_post, file = 'set17_10_post.txt')
+write.table(est_post, file = 'set16_8_post.txt')
 
 # get Ntrans on random tree
 print( n_states_1 / n_states_true)
