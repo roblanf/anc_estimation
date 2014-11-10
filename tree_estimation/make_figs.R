@@ -13,7 +13,7 @@ p1 <- ggplot(seq_dat1, aes(x = meanPost, y = treedist, colour = slen)) + geom_po
 
 
 
-pdf(file = 'suppfig1.pdf', useDingbats = F)
+pdf(file = 'suppfig1.pdf', useDingbats = F, width = 9, height = 7)
 print(p1)
 dev.off()
 
