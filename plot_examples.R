@@ -44,8 +44,6 @@ plot(tr_true, show.tip.label = F)
 tiplabels(tips_true, cex = 0.5, frame = 'circle', bg = as.factor(tips_true))
 nodelabels(true_nodes, cex = 0.5, frame = 'circle', bg = as.factor(true_nodes))
 
-# get Ntrans on true tree
-
 
 
 fit_1 <- rerootingMethod(est_chrono[[1]], tr_s$states, model = 'SYM')

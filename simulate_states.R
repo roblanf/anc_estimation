@@ -52,7 +52,7 @@ for(i in 1:length(true_trees)){
   est_true <- get_fitted_states(fit_true, tip_states, true_temp)
 
   n_true_tree <- sum(sapply(1:nrow(est_true), function(x) est_true[x, 1] != est_true[x, 2]))
-
+ 
   # On posterior trees
 
   postres <- read.nexus(gsub('tree ?', 'trees', true_trees[i]))
