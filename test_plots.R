@@ -43,6 +43,6 @@ dat1.2$mean_post <- jitter(dat1.2$mean_post, amount = 0.02)
 plot1.2 <- ggplot(dat1.2, aes(x = mean_post, y = ((error_max - error_min) / 2) + error_min)) + geom_errorbar(aes(ymin = error_min, ymax = error_max, width = 0.0)) + facet_wrap(~exp_t + ntax, scales = 'free')+ xlab('Mean posterior node support from reconstructed trees') + theme(axis.ticks = element_blank(), axis.text.x = element_blank()) + theme_bw() + geom_abline(intercept = 1, slope = 0, col = 'black', lty = 3) + ylab (expression(paste('Estimated ', 'transitions', ' on reconstructed tree / Estimated ', 'transitions',' on true tree '))) + ylim(0, 21)  + geom_point(size = 2)+ xlim(0, 1) 
 
 
-pdf(file = 'Fig1_post_500tax.pdf', useDingbats = F, width = 12, height = )
+pdf(file = 'Fig1_post_500tax.pdf', useDingbats = F, width = 12, height = 7)
 print(plot1.2)
 dev.off()
