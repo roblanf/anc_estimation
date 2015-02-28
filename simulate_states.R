@@ -22,7 +22,7 @@
 source('../../R/functions.R')
 #source('../R/functions.R')
 require(phytools)
-require(NELSI)
+#require(NELSI)
 require(methods)
 true_trees <- grep('[.]tree ?$', dir(), value = T)
 
