@@ -58,9 +58,9 @@ for(i in 1:length(true_trees)){
   postres <- read.nexus(gsub('tree ?', 'trees', true_trees[i]))
 
   est_post <- vector()
-  for(k in sample((length(postres) - 200):length(postres), 10)){
+  for(k in sample((length(postres) - 200):length(postres), 50)){
       print(paste('estimating states for tree' , k))
-      fit_post_temp <- make.simmap(postres[[k]], tip_states, model = 'SYM', nsim = 10)
+      fit_post_temp <- make.simmap(postres[[k]], tip_states, model = 'SYM', nsim = 100)
       est_post_temp <- describe.simmap(fit_post_temp, plot = FALSE)
       n_est_post_temp <- tryCatch(mean(est_post_temp$count[, 1]), error = function(x) mean(est_post_temp$count))
       est_post <- c(est_post, n_est_post_temp)
