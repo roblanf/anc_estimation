@@ -49,23 +49,25 @@ for(i in 1:length(true_trees)){
     print(paste('getting states...', t_sim))
   }
 
-  fit_true <- make.simmap(true_temp, tip_states, model = 'SYM', nsim = 100)
-  est_true <- describe.simmap(fit_true, plot = FALSE)
-  n_true_tree <- mean(est_true$count[, 1])
+  fit_true <- make.simmap(true_temp, tip_states, model = 'SYM', nsim = 10)
+  est_true <- describe.simmap(fit_true, plot = FALSE)$count
+  n_true_tree <- tryCatch(mean(est_true[, 1]), error = function(x) mean(est_true))
 
   # On posterior trees
 
   postres <- read.nexus(gsub('tree ?', 'trees', true_trees[i]))
 
   est_post <- vector()
-  for(k in sample((length(postres) - 200):length(postres), 50)){
+  for(k in sample((length(postres) - 200):length(postres), 10)){
       print(paste('estimating states for tree' , k))
-      fit_post_temp <- make.simmap(postres[[k]], tip_states, model = 'SYM', nsim = 100)
-      est_post_temp <- describe.simmap(fit_post_temp, plot = FALSE)
-      n_est_post_temp <- tryCatch(mean(est_post_temp$count[, 1]), error = function(x) mean(est_post_temp$count))
+      fit_post_temp <- make.simmap(postres[[k]], tip_states, model = 'SYM', nsim = 10)
+
+      est_post_temp <- describe.simmap(fit_post_temp, plot = FALSE)$count
+           
+      n_est_post_temp <- tryCatch(mean(est_post_temp[, 1]), error = function(x) mean(est_post_temp))
+#       n_est_post_temp <- mean(est_post_temp)
       est_post <- c(est_post, n_est_post_temp)
   }
-
 
       errors_temp <- est_post - n_true_tree
       res_mat[i, ] <- c(gsub('[.].+$', '', true_trees[i]), n_true_tree, min(errors_temp), max(errors_temp))
