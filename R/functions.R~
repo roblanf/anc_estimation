@@ -61,7 +61,8 @@ print_diagnostics <- function(tree_simulation, Q, plot_results = FALSE){
 }
 
 
-# get fitted states from a rerootingMethod object DEPRECATED AFTER FIRST REVISIONS. SEE CODE IN simulate_states.R
+# get fitted states from a rerootingMethod object
+
 
 
 

@@ -49,7 +49,7 @@ for(i in 1:length(true_trees)){
     print(paste('getting states...', t_sim))
   }
 
-  fit_true <- make.simmap(true_temp, tip_states, model = 'SYM', nsim = 10)
+  fit_true <- make.simmap(true_temp, tip_states, model = 'SYM', nsim = 100)
   est_true <- describe.simmap(fit_true, plot = FALSE)$count
   n_true_tree <- tryCatch(mean(est_true[, 1]), error = function(x) mean(est_true))
 
@@ -60,7 +60,7 @@ for(i in 1:length(true_trees)){
   est_post <- vector()
   for(k in sample((length(postres) - 200):length(postres), 10)){
       print(paste('estimating states for tree' , k))
-      fit_post_temp <- make.simmap(postres[[k]], tip_states, model = 'SYM', nsim = 10)
+      fit_post_temp <- make.simmap(postres[[k]], tip_states, model = 'SYM', nsim = 100)
 
       est_post_temp <- describe.simmap(fit_post_temp, plot = FALSE)$count
            
